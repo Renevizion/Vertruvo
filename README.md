@@ -22,11 +22,11 @@ npm run build
 
 ## Customize this fork
 
-Edit `/tmp/workspace/Renevizion/Vertruvo/src/main.ts` to update:
+Edit `src/main.ts` to update:
 
 - app name
 - headline and positioning
 - feature pillars
 - launch checklist
 
-Edit `/tmp/workspace/Renevizion/Vertruvo/src/style.css` to change the visual brand.
+Edit `src/style.css` to change the visual brand.
