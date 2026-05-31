@@ -19,7 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Check, X, Loader2 } from "lucide-react";
 
-const BRAND_ORIGIN = "https://kiruvo.com";
+const BRAND_ORIGIN = "https://thermi.com";
 
 const getBrandedUrl = (path: string) => {
   const host = window.location.hostname.toLowerCase();
@@ -187,7 +187,7 @@ export function BookingManagementSheet({
             )}
             {slugStatus === "idle" && normalizedSlug === currentSlug && (
               <p className="text-xs text-muted-foreground">
-                Current link: kiruvo.com/book/{currentSlug}
+                Current link: thermi.com/book/{currentSlug}
               </p>
             )}
           </div>

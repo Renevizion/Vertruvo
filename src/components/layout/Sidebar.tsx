@@ -116,7 +116,7 @@ export const Sidebar = () => {
   return (
     <SidebarComponent
       collapsible="icon"
-      className="kiruvo-sidebar border-r border-sidebar-border/70"
+      className="thermi-sidebar border-r border-sidebar-border/70"
     >
 
       <SidebarContent className="gap-1 px-2 py-2">
@@ -128,7 +128,7 @@ export const Sidebar = () => {
               isCollapsed ? "text-2xl text-center" : "text-3xl"
             )}
           >
-            {isCollapsed ? "K" : "Kiruvo"}
+            {isCollapsed ? "K" : "Thermi"}
           </h1>
         </div>
 
@@ -142,19 +142,19 @@ export const Sidebar = () => {
                   const isActive = group.items.some(item => location.pathname === item.href || location.pathname.startsWith(item.href + '/'));
                   return (
                     <SidebarMenuItem key={group.label} className="overflow-visible">
-                      <div className="kiruvo-rail-menu group/rail relative flex justify-center overflow-visible">
+                      <div className="thermi-rail-menu group/rail relative flex justify-center overflow-visible">
                         <button
                           onClick={() => handleNav(primaryItem.href)}
                           className={cn(
-                            "kiruvo-rail-item flex h-10 w-10 items-center justify-center rounded-md transition-all",
-                            isActive && "kiruvo-nav-active bg-sidebar-primary text-sidebar-primary-foreground"
+                            "thermi-rail-item flex h-10 w-10 items-center justify-center rounded-md transition-all",
+                            isActive && "thermi-nav-active bg-sidebar-primary text-sidebar-primary-foreground"
                           )}
                           aria-label={primaryItem.name}
                         >
                           <primaryItem.icon className="h-5 w-5" />
                         </button>
-                        <div className="kiruvo-rail-panel pointer-events-none absolute left-12 top-0 z-[100] min-w-52 opacity-0 transition-all duration-150 group-hover/rail:pointer-events-auto group-hover/rail:translate-x-1 group-hover/rail:opacity-100 group-focus-within/rail:pointer-events-auto group-focus-within/rail:translate-x-1 group-focus-within/rail:opacity-100">
-                          <div className="kiruvo-rail-feather py-2">
+                        <div className="thermi-rail-panel pointer-events-none absolute left-12 top-0 z-[100] min-w-52 opacity-0 transition-all duration-150 group-hover/rail:pointer-events-auto group-hover/rail:translate-x-1 group-hover/rail:opacity-100 group-focus-within/rail:pointer-events-auto group-focus-within/rail:translate-x-1 group-focus-within/rail:opacity-100">
+                          <div className="thermi-rail-feather py-2">
                             <div className="mb-1 flex items-center gap-2 px-3 text-[10px] font-semibold uppercase text-sidebar-foreground/55">
                               <span>{group.label}</span>
                               {group.items.length > 1 && <ChevronDown className="h-3 w-3" />}
@@ -168,7 +168,7 @@ export const Sidebar = () => {
                                     type="button"
                                     onClick={() => handleNav(item.href)}
                                     className={cn(
-                                      "kiruvo-rail-panel-item flex w-full items-center gap-2 px-3 py-1.5 text-left text-sm text-sidebar-foreground/80 transition-all",
+                                      "thermi-rail-panel-item flex w-full items-center gap-2 px-3 py-1.5 text-left text-sm text-sidebar-foreground/80 transition-all",
                                       itemActive && "text-sidebar-foreground"
                                     )}
                                   >
@@ -202,8 +202,8 @@ export const Sidebar = () => {
                       <SidebarMenuButton
                         asChild
                          className={cn(
-                            "kiruvo-nav-item min-h-[44px]",
-                            isActive && "kiruvo-nav-active bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground"
+                            "thermi-nav-item min-h-[44px]",
+                            isActive && "thermi-nav-active bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground"
                          )}
                          tooltip={undefined}
                        >
@@ -251,8 +251,8 @@ export const Sidebar = () => {
                             <SidebarMenuButton
                               asChild
                               className={cn(
-                                "kiruvo-nav-item min-h-[44px]",
-                                isActive && "kiruvo-nav-active bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground"
+                                "thermi-nav-item min-h-[44px]",
+                                isActive && "thermi-nav-active bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground"
                               )}
                               tooltip={undefined}
                             >

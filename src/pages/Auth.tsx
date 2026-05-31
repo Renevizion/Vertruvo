@@ -274,16 +274,16 @@ const Auth = () => {
   return (
     <>
       <Helmet>
-        <title>Sign In to Kiruvo | The Operating System for Service Businesses</title>
-        <meta name="description" content="Log in or create your Kiruvo account. Voice agents, CRM, booking, payments and campaigns — one platform for service businesses." />
-        <meta name="keywords" content="Kiruvo login, Kiruvo signup, service business OS, AI receptionist login" />
-        <link rel="canonical" href="https://kiruvo.com/auth" />
+        <title>Sign In to Thermi | The Operating System for HVAC Businesses</title>
+        <meta name="description" content="Log in or create your Thermi account. Voice agents, CRM, booking, payments and campaigns — one platform for HVAC businesses." />
+        <meta name="keywords" content="Thermi login, Thermi signup, HVAC business OS, HVAC AI receptionist login" />
+        <link rel="canonical" href="https://thermi.com/auth" />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary/5 via-background to-secondary/5 p-4">
         <div className="w-full max-w-md mb-4">
           <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1.5 text-muted-foreground">
-            <ArrowLeft className="w-4 h-4" /> Back to Kiruvo
+            <ArrowLeft className="w-4 h-4" /> Back to Thermi
           </Button>
         </div>
         <Card className="w-full max-w-md">
@@ -291,7 +291,7 @@ const Auth = () => {
           <div className="flex items-center justify-center mb-4">
             <Building2 className="h-12 w-12 text-primary" />
           </div>
-          <CardTitle className="text-2xl text-center">Welcome to Kiruvo</CardTitle>
+          <CardTitle className="text-2xl text-center">Welcome to Thermi</CardTitle>
           <CardDescription className="text-center">
             Manage your business relationships efficiently
           </CardDescription>

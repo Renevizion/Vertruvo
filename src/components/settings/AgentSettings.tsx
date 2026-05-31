@@ -25,7 +25,7 @@ export function AgentSettings() {
     await updateSettings({ tier: newTier });
     toast({
       title: "Tier Updated",
-      description: `Switched to Kiruvo AI ${newTier === 'premium' ? 'Pro' : 'Standard'}`
+      description: `Switched to Thermi AI ${newTier === 'premium' ? 'Pro' : 'Standard'}`
     });
   };
 
@@ -33,7 +33,7 @@ export function AgentSettings() {
     await updateSettings({ provider: newProvider });
     toast({
       title: "Routing updated",
-      description: `Kiruvo AI is now routing through ${newProvider === 'gemini' ? 'Gemini' : 'Mistral'} models`
+      description: `Thermi AI is now routing through ${newProvider === 'gemini' ? 'Gemini' : 'Mistral'} models`
     });
   };
 
@@ -70,7 +70,7 @@ export function AgentSettings() {
           />
         </div>
 
-        {/* Kiruvo AI Routing */}
+        {/* Thermi AI Routing */}
         {enabled && (
           <div className="space-y-3 pt-4 border-t">
             <div className="flex items-center justify-between">
@@ -82,20 +82,20 @@ export function AgentSettings() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="gemini">Kiruvo AI · Gemini route (default)</SelectItem>
-                <SelectItem value="mistral">Kiruvo AI · Mistral route</SelectItem>
+                <SelectItem value="gemini">Thermi AI · Gemini route (default)</SelectItem>
+                <SelectItem value="mistral">Thermi AI · Mistral route</SelectItem>
               </SelectContent>
             </Select>
             <p className="text-sm text-muted-foreground">
-              All AI runs through the Kiruvo AI gateway with metered billing on your subscription. You only change which underlying model handles your insights.
+              All AI runs through the Thermi AI gateway with metered billing on your subscription. You only change which underlying model handles your insights.
             </p>
           </div>
         )}
 
-        {/* Kiruvo AI Tier */}
+        {/* Thermi AI Tier */}
         {enabled && (
           <div className="space-y-3 pt-4 border-t">
-            <Label htmlFor="agent-tier">Kiruvo AI tier</Label>
+            <Label htmlFor="agent-tier">Thermi AI tier</Label>
             <Select value={tier} onValueChange={handleTierChange}>
               <SelectTrigger id="agent-tier">
                 <SelectValue />
@@ -117,8 +117,8 @@ export function AgentSettings() {
             </Select>
             <p className="text-sm text-muted-foreground">
               {tier === 'basic' 
-                ? 'Kiruvo AI Standard — fast, cost-efficient insights for everyday workflows.' 
-                : 'Kiruvo AI Pro — advanced reasoning for forecasting, scoring and complex analysis.'}
+                ? 'Thermi AI Standard — fast, cost-efficient insights for everyday workflows.' 
+                : 'Thermi AI Pro — advanced reasoning for forecasting, scoring and complex analysis.'}
             </p>
           </div>
         )}

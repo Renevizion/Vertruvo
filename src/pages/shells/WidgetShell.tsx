@@ -28,7 +28,7 @@ export default function WidgetShell() {
   return (
     <ShellChrome
       shell="widget"
-      title="Kiruvo Widget"
+      title="Thermi Widget"
       subtitle="Embeddable on any third-party site"
       accent="bg-gradient-to-br from-emerald-500 to-emerald-700"
       defaultCapability="agent.chat"
@@ -111,7 +111,7 @@ function ChatPanel({ onDone }: { onDone: () => void }) {
   return (
     <Card>
       <CardContent className="p-0">
-        <iframe title="Kiruvo Agent" src="/shell/agent" className="w-full h-[520px] rounded-md border-0" />
+        <iframe title="Thermi Agent" src="/shell/agent" className="w-full h-[520px] rounded-md border-0" />
         <div className="p-3 border-t flex justify-end">
           <Button variant="ghost" size="sm" onClick={onDone}>Back to menu</Button>
         </div>

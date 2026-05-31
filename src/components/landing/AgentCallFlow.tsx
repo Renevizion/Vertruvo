@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Phone, Bot, Calendar, CheckCircle2, Database, MessageSquare, User } from "lucide-react";
 
 /**
- * AgentCallFlow — Seeded UI graphic of Kiruvo's AI voice agent handling
+ * AgentCallFlow — Seeded UI graphic of Thermi's AI voice agent handling
  * a live inbound call. Pulses, waveform, animated transcript, highlighted
  * step flow (Answer → Qualify → Book → Log). No real data, no canvas.
  */
@@ -82,8 +82,8 @@ export function AgentCallFlow() {
           </div>
 
           <div className="text-center">
-            <div className="text-sm font-semibold">Kiruvo Voice Agent</div>
-            <div className="text-xs text-muted-foreground mt-0.5">Speaking · Kiruvo voice</div>
+            <div className="text-sm font-semibold">Thermi Voice Agent</div>
+            <div className="text-xs text-muted-foreground mt-0.5">Speaking · Thermi voice</div>
           </div>
 
           {/* Waveform */}

@@ -9,18 +9,18 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | Kiruvo AI CRM</title>
+        <title>Privacy Policy | Thermi AI CRM</title>
         <meta
           name="description"
-          content="Kiruvo privacy policy. Learn how we collect, use, and protect your data when using our AI CRM platform."
+          content="Thermi privacy policy. Learn how we collect, use, and protect your data when using our AI CRM platform."
         />
-        <link rel="canonical" href="https://kiruvo.com/privacy" />
+        <link rel="canonical" href="https://thermi.com/privacy" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <header className="border-b">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-              <h1 className="text-2xl font-bold">Kiruvo</h1>
+              <h1 className="text-2xl font-bold">Thermi</h1>
             </div>
             <Button variant="ghost" onClick={() => navigate("/")}>
               <ArrowLeft className="w-4 h-4 mr-2" /> Back
@@ -35,7 +35,7 @@ const Privacy = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Introduction</h3>
               <p className="text-muted-foreground">
-                Kiruvo ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how
+                Thermi ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how
                 we collect, use, disclose, and safeguard your information when you use our AI CRM platform.
               </p>
             </section>
@@ -93,8 +93,8 @@ const Privacy = () => {
               <ol className="list-decimal pl-6 space-y-2 text-muted-foreground mb-4">
                 <li>
                   Email us at{" "}
-                  <a href="mailto:privacy@kiruvo.com" className="text-primary hover:underline">
-                    privacy@kiruvo.com
+                  <a href="mailto:privacy@thermi.com" className="text-primary hover:underline">
+                    privacy@thermi.com
                   </a>{" "}
                   with the subject line "Data Deletion Request"
                 </li>
@@ -102,7 +102,7 @@ const Privacy = () => {
                 <li>We will process your request within 30 days and confirm deletion via email</li>
               </ol>
               <p className="text-muted-foreground">
-                If you signed up using Facebook Login, you can also disconnect Kiruvo from your Facebook settings. Upon
+                If you signed up using Facebook Login, you can also disconnect Thermi from your Facebook settings. Upon
                 disconnection or deletion request, we will remove all data associated with your account from our
                 systems.
               </p>
@@ -114,13 +114,13 @@ const Privacy = () => {
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
               <p className="text-muted-foreground mt-2">
-                Kiruvo
+                Thermi
                 <br />
                 Connecticut 06850
                 <br />
                 Email:{" "}
-                <a href="mailto:privacy@kiruvo.com" className="text-primary hover:underline">
-                  privacy@kiruvo.com
+                <a href="mailto:privacy@thermi.com" className="text-primary hover:underline">
+                  privacy@thermi.com
                 </a>
               </p>
             </section>

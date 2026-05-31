@@ -152,7 +152,7 @@ export function VoicemailDropsManager() {
         <Card className="p-8 text-center">
           <Voicemail className="h-10 w-10 mx-auto mb-3 text-muted-foreground opacity-50" />
           <p className="text-sm text-muted-foreground">No voicemail drops yet</p>
-          <p className="text-xs text-muted-foreground mt-1">Create one to use with Kiruvo Voice or outbound calls</p>
+          <p className="text-xs text-muted-foreground mt-1">Create one to use with Thermi Voice or outbound calls</p>
         </Card>
       ) : (
         <div className="space-y-2">

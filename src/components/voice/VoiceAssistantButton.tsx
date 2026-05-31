@@ -45,7 +45,7 @@ export function VoiceAssistantButton({ externalOpen, onExternalClose }: { extern
       if (!session) return "Error: not authenticated";
 
       const resp = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/kiruvo-voice-tools`,
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/thermi-voice-tools`,
         {
           method: "POST",
           headers: {
@@ -207,7 +207,7 @@ export function VoiceAssistantButton({ externalOpen, onExternalClose }: { extern
     actionsRef.current = [];
     try {
       await navigator.mediaDevices.getUserMedia({ audio: true });
-      const { data, error } = await supabase.functions.invoke("kiruvo-realtime-session");
+      const { data, error } = await supabase.functions.invoke("thermi-realtime-session");
 
       if (error || !data?.signed_url) {
         throw new Error(data?.error || error?.message || "Failed to start session");
@@ -314,7 +314,7 @@ export function VoiceAssistantButton({ externalOpen, onExternalClose }: { extern
               isConnected ? "bg-primary animate-pulse" : "bg-muted-foreground"
             )}
           />
-          <span className="font-semibold text-sm">Kiruvo Voice</span>
+          <span className="font-semibold text-sm">Thermi Voice</span>
           <CallStateBadge status={String(callState.value)} />
           {isConnected && (
             <span className="text-[10px] bg-primary/15 text-primary px-1.5 py-0.5 rounded-full font-medium">

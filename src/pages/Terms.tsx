@@ -9,18 +9,18 @@ const Terms = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service | Kiruvo AI CRM</title>
+        <title>Terms of Service | Thermi AI CRM</title>
         <meta
           name="description"
-          content="Kiruvo terms of service. Read our terms and conditions for using the Kiruvo AI CRM platform."
+          content="Thermi terms of service. Read our terms and conditions for using the Thermi AI CRM platform."
         />
-        <link rel="canonical" href="https://kiruvo.com/terms" />
+        <link rel="canonical" href="https://thermi.com/terms" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <header className="border-b">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-              <h1 className="text-2xl font-bold">Kiruvo</h1>
+              <h1 className="text-2xl font-bold">Thermi</h1>
             </div>
             <Button variant="ghost" onClick={() => navigate("/")}>
               <ArrowLeft className="w-4 h-4 mr-2" /> Back
@@ -35,7 +35,7 @@ const Terms = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Agreement to Terms</h3>
               <p className="text-muted-foreground">
-                By accessing or using Kiruvo, you agree to be bound by these Terms of Service and all applicable laws
+                By accessing or using Thermi, you agree to be bound by these Terms of Service and all applicable laws
                 and regulations. If you do not agree with any of these terms, you are prohibited from using this
                 service.
               </p>
@@ -44,13 +44,13 @@ const Terms = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Use License</h3>
               <p className="text-muted-foreground mb-4">
-                Permission is granted to access and use Kiruvo for business and personal relationship management
+                Permission is granted to access and use Thermi for business and personal relationship management
                 purposes, subject to the following restrictions:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>You may not modify or copy the materials</li>
                 <li>You may not use the materials for any commercial purpose without authorization</li>
-                <li>You may not attempt to reverse engineer any software contained in Kiruvo</li>
+                <li>You may not attempt to reverse engineer any software contained in Thermi</li>
                 <li>You may not remove any copyright or proprietary notations</li>
               </ul>
             </section>
@@ -66,7 +66,7 @@ const Terms = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Service Availability</h3>
               <p className="text-muted-foreground">
-                We strive to provide consistent service but do not guarantee that Kiruvo will be available at all times.
+                We strive to provide consistent service but do not guarantee that Thermi will be available at all times.
                 We may experience hardware, software, or other problems or need to perform maintenance, resulting in
                 interruptions, delays, or errors.
               </p>
@@ -75,7 +75,7 @@ const Terms = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Data Ownership</h3>
               <p className="text-muted-foreground">
-                You retain all rights to the data you input into Kiruvo. We do not claim ownership of your customer
+                You retain all rights to the data you input into Thermi. We do not claim ownership of your customer
                 data, business information, or other content you create using our platform.
               </p>
             </section>
@@ -83,8 +83,8 @@ const Terms = () => {
             <section>
               <h3 className="text-2xl font-semibold mb-4">Limitation of Liability</h3>
               <p className="text-muted-foreground">
-                In no event shall Kiruvo or its suppliers be liable for any damages arising out of the use or inability
-                to use the service, even if Kiruvo has been notified of the possibility of such damages.
+                In no event shall Thermi or its suppliers be liable for any damages arising out of the use or inability
+                to use the service, even if Thermi has been notified of the possibility of such damages.
               </p>
             </section>
 
@@ -109,13 +109,13 @@ const Terms = () => {
               <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
               <p className="text-muted-foreground">Questions about the Terms of Service should be sent to:</p>
               <p className="text-muted-foreground mt-2">
-                Kiruvo
+                Thermi
                 <br />
                 Connecticut 06850
                 <br />
                 Email:{" "}
-                <a href="mailto:legal@kiruvo.com" className="text-primary hover:underline">
-                  legal@kiruvo.com
+                <a href="mailto:legal@thermi.com" className="text-primary hover:underline">
+                  legal@thermi.com
                 </a>
               </p>
             </section>

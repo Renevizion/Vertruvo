@@ -58,7 +58,7 @@ export default function KioskShell() {
   return (
     <ShellChrome
       shell="kiosk"
-      title="Kiruvo Kiosk"
+      title="Thermi Kiosk"
       subtitle={staff ? "Staff mode — 15 min auto-lock" : "Customer mode — tap to begin"}
       accent="bg-gradient-to-br from-violet-500 to-violet-700"
       defaultCapability={staff ? "pay.pos" : "booking.public"}

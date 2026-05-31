@@ -398,7 +398,7 @@ export function PromotionsManager() {
 
       <CardContent>
         <p className="text-sm text-muted-foreground mb-4">
-          Create promotions here. Your AI voice assistant (Kiruvo) will <strong>only</strong> offer these active promotions to leads — nothing else.
+          Create promotions here. Your AI voice assistant (Thermi) will <strong>only</strong> offer these active promotions to leads — nothing else.
         </p>
 
         {isLoading ? (
@@ -407,7 +407,7 @@ export function PromotionsManager() {
           <div className="text-center py-8 text-muted-foreground">
             <Tag className="h-10 w-10 mx-auto mb-2 opacity-40" />
             <p className="font-medium">No promotions yet</p>
-            <p className="text-xs mt-1">Create your first promotion so Kiruvo knows what to offer</p>
+            <p className="text-xs mt-1">Create your first promotion so Thermi knows what to offer</p>
           </div>
         ) : (
           <Table>

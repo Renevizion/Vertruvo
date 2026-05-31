@@ -2,7 +2,7 @@ import type { ComponentType, LazyExoticComponent } from "react";
 import { lazy } from "react";
 
 /**
- * Capability Registry — single source of truth for what Kiruvo can do.
+ * Capability Registry — single source of truth for what Thermi can do.
  * Every shell (SaaS, Widget, Kiosk, Extension, Agent, API) reads from this.
  *
  * See CAPABILITIES.md, SHELLS.md, CORE_CONTRACT.md at project root.

@@ -222,7 +222,7 @@ export function AIFlyerGenerator() {
                 <Textarea
                   value={editPrompt}
                   onChange={e => setEditPrompt(e.target.value)}
-                  placeholder="e.g. 'Change the title text to Summer 2026', 'Make the background darker', 'Replace the URL with www.kiruvo.com', 'Add a red banner at the top'"
+                  placeholder="e.g. 'Change the title text to Summer 2026', 'Make the background darker', 'Replace the URL with www.thermi.com', 'Add a red banner at the top'"
                   rows={4}
                   className="text-sm"
                 />

@@ -13,7 +13,7 @@ import { Link2, Check, ExternalLink, Settings2 } from "lucide-react";
 import { toast } from "sonner";
 import { BookingManagementSheet } from "./BookingManagementSheet";
 
-const BRAND_BOOKING_ORIGIN = "https://kiruvo.com";
+const BRAND_BOOKING_ORIGIN = "https://thermi.com";
 
 type ShareWorkspace = {
   id: string;

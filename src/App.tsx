@@ -240,7 +240,7 @@ const AppLayout = () => {
   const [voiceOpen, setVoiceOpen] = useState(false);
   useShellHeartbeat("saas", null);
   return (
-    <div className="kiruvo-app-shell h-screen max-h-screen bg-background flex w-full overflow-hidden" style={{height:'100dvh',maxHeight:'100dvh'}}>
+    <div className="thermi-app-shell h-screen max-h-screen bg-background flex w-full overflow-hidden" style={{height:'100dvh',maxHeight:'100dvh'}}>
       <Sidebar />
       <div className="flex-1 flex flex-col min-w-0 min-h-0 overflow-hidden">
         <Header onVoiceOpen={() => setVoiceOpen(true)} />
@@ -248,7 +248,7 @@ const AppLayout = () => {
         <UsageLimitWatcher />
         <main
           aria-label="Workspace"
-          className="kiruvo-app-main flex-1 min-h-0 p-3 sm:p-5 lg:p-6 overflow-y-auto overflow-x-hidden overscroll-contain safe-bottom"
+          className="thermi-app-main flex-1 min-h-0 p-3 sm:p-5 lg:p-6 overflow-y-auto overflow-x-hidden overscroll-contain safe-bottom"
           style={{ WebkitOverflowScrolling: "touch" }}
         >
           <Suspense fallback={<PageLoader />}>

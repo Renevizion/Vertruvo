@@ -43,7 +43,7 @@ export function ReferralProgram() {
         code,
         completedReferrals: count || 0,
         pendingReferrals: pendingCount || 0,
-        referralLink: `https://kiruvo.com/auth?ref=${code}`,
+        referralLink: `https://thermi.com/auth?ref=${code}`,
       };
     },
   });
@@ -68,7 +68,7 @@ export function ReferralProgram() {
     <div className="space-y-6">
       <div>
         <h2 className="text-2xl font-bold">Referral Program</h2>
-        <p className="text-muted-foreground">Share Kiruvo with another business owner. When they subscribe to a paid plan, account credit lands on your next invoice.</p>
+        <p className="text-muted-foreground">Share Thermi with another business owner. When they subscribe to a paid plan, account credit lands on your next invoice.</p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-3">

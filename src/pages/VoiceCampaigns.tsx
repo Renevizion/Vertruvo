@@ -79,7 +79,7 @@ export default function VoiceCampaigns() {
           <div className="flex-1 min-w-0">
             <p className="text-sm font-semibold text-foreground">Your AI makes the calls — you just review the results.</p>
             <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
-              Kiruvo Voice dials your leads, follows your script, and books appointments automatically.
+              Thermi Voice dials your leads, follows your script, and books appointments automatically.
               Set up your call templates first, then launch a campaign to start calling.
             </p>
           </div>

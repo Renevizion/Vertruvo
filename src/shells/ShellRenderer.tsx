@@ -53,7 +53,7 @@ export function ShellRenderer({ instance }: { instance: ShellInstanceConfig }) {
   }, [instance.capabilityKeys, instance.workspaceSlug]);
 
   const accent = instance.accentColor || "#059669";
-  const brand = instance.brandName?.trim() || (instance.kind === "wl" ? instance.name : "Kiruvo");
+  const brand = instance.brandName?.trim() || (instance.kind === "wl" ? instance.name : "Thermi");
   const isWhiteLabel = instance.kind === "wl" && Boolean(instance.brandName?.trim());
   const openMode = instance.layout?.openMode ?? "inline";
   const tileSize = instance.layout?.tileSize ?? "standard";
@@ -198,7 +198,7 @@ export function ShellRenderer({ instance }: { instance: ShellInstanceConfig }) {
 }
 
 function InlineCapability({ cap, path }: { cap: Capability; path: string | null }) {
-  if (cap.key === "agent.chat") return <PublicAgentPanel brand="Kiruvo" />;
+  if (cap.key === "agent.chat") return <PublicAgentPanel brand="Thermi" />;
   if (!path) return null;
 
   return (

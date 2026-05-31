@@ -192,7 +192,7 @@ export default function ShellEditor() {
               <div className="space-y-3 pt-3 border-t">
                 <div className="text-xs uppercase tracking-wide text-muted-foreground">White-label</div>
                 <div>
-                  <Label htmlFor="brand">Brand name (replaces "Kiruvo")</Label>
+                  <Label htmlFor="brand">Brand name (replaces "Thermi")</Label>
                   <Input id="brand" value={shell.brand_name ?? ""} placeholder="Their brand"
                     onChange={(e) => update("brand_name", e.target.value)} />
                 </div>

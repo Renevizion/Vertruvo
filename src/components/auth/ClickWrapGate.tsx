@@ -50,7 +50,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
         console.error("[ClickWrap] direct insert failed", err);
         toast({
           title: "Couldn't record acceptance",
-          description: "Please refresh and try again, or contact legal@kiruvo.com.",
+          description: "Please refresh and try again, or contact legal@thermi.com.",
           variant: "destructive",
         });
       }
@@ -70,7 +70,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
           </div>
           <div>
             <h1 className="text-lg font-semibold">End User License Agreement</h1>
-            <p className="text-xs text-muted-foreground">Kiruvo Platform · Version {LICENSE_VERSION} · You must accept to continue</p>
+            <p className="text-xs text-muted-foreground">Thermi Platform · Version {LICENSE_VERSION} · You must accept to continue</p>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
             <p className="font-semibold text-base">KIRUVO PLATFORM END USER LICENSE AGREEMENT</p>
             <p>Last updated: May 27, 2026 · Effective upon acceptance</p>
 
-            <p>This End User License Agreement ("Agreement") is a legally binding contract between you ("User," "Partner," or "Operator") and Milord Ventures LLC, doing business as Kiruvo ("Company," "we," "us," or "our"), governing your access to and use of the Kiruvo platform, software, AI agents, workflows, templates, data structures, and all associated intellectual property (collectively, the "Platform").</p>
+            <p>This End User License Agreement ("Agreement") is a legally binding contract between you ("User," "Partner," or "Operator") and Milord Ventures LLC, doing business as Thermi ("Company," "we," "us," or "our"), governing your access to and use of the Thermi platform, software, AI agents, workflows, templates, data structures, and all associated intellectual property (collectively, the "Platform").</p>
 
             <p className="font-semibold">BY CLICKING "I AGREE AND ACCEPT," YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE LEGALLY BOUND BY THIS AGREEMENT. IF YOU DO NOT AGREE, YOU MUST NOT ACCESS OR USE THE PLATFORM.</p>
 
@@ -121,7 +121,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
             <p className="font-semibold">10. ENTIRE AGREEMENT</p>
             <p>This Agreement constitutes the entire agreement between you and the Company regarding the subject matter herein and supersedes all prior agreements, representations, and understandings. Any modification must be in writing and signed by an authorized representative of the Company.</p>
 
-            <p className="font-semibold">Contact: legal@kiruvo.com · Milord Ventures LLC · Connecticut, USA</p>
+            <p className="font-semibold">Contact: legal@thermi.com · Milord Ventures LLC · Connecticut, USA</p>
           </div>
         </ScrollArea>
 
@@ -142,7 +142,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
               className="mt-0.5"
             />
             <label htmlFor="accept-license" className="text-sm cursor-pointer leading-relaxed">
-              I have read, understand, and agree to be legally bound by the Kiruvo End User License Agreement (Version {LICENSE_VERSION}). I acknowledge that clicking "I Agree and Accept" constitutes my electronic signature and creates a legally enforceable contract.
+              I have read, understand, and agree to be legally bound by the Thermi End User License Agreement (Version {LICENSE_VERSION}). I acknowledge that clicking "I Agree and Accept" constitutes my electronic signature and creates a legally enforceable contract.
             </label>
           </div>
 

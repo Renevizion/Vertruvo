@@ -79,7 +79,7 @@ export function FabricFlyerCanvas({ onBack }: { onBack: () => void }) {
     const url = canvas.toDataURL({ format: "png", multiplier: 2 });
     const link = document.createElement("a");
     link.href = url;
-    link.download = "kiruvo-fabric-flyer.png";
+    link.download = "thermi-fabric-flyer.png";
     link.click();
     toast.success("Fabric flyer exported");
   };

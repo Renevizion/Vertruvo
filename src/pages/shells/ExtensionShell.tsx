@@ -41,7 +41,7 @@ export default function ExtensionShell() {
   return (
     <ShellChrome
       shell="extension"
-      title="Kiruvo Extension"
+      title="Thermi Extension"
       subtitle="Quick capture from any tab"
       accent="bg-gradient-to-br from-orange-500 to-orange-700"
       defaultCapability="crm.capture"

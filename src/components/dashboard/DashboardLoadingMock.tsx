@@ -5,7 +5,7 @@ import { DollarSign, Users, Phone, Calendar, TrendingUp } from "lucide-react";
  * Replaces the "Loading metrics..." text with a branded, animated
  * shimmer that looks like the real dashboard about to resolve.
  *
- * Style language matches HeroProductMock (emerald, soft shimmer, kiruvoBar).
+ * Style language matches HeroProductMock (emerald, soft shimmer, thermiBar).
  */
 export function DashboardLoadingMock() {
   const cards = [

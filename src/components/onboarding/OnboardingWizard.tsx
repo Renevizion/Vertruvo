@@ -897,7 +897,7 @@ export const OnboardingWizard = ({ onComplete }: OnboardingWizardProps) => {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-primary" />
-              <CardTitle>Welcome to Kiruvo</CardTitle>
+              <CardTitle>Welcome to Thermi</CardTitle>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-sm text-muted-foreground">Step {step} of {totalSteps}</span>

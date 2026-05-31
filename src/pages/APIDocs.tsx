@@ -59,8 +59,8 @@ const endpoints: Record<string, EndpointDoc[]> = {
     },
     {
       method: "POST",
-      path: "/kiruvo-ai-agent",
-      description: "Execute a Kiruvo AI-powered agent query with CRM context.",
+      path: "/thermi-ai-agent",
+      description: "Execute a Thermi AI-powered agent query with CRM context.",
       auth: "Bearer token",
       body: { message: "string", context: "object?" },
     },
@@ -69,7 +69,7 @@ const endpoints: Record<string, EndpointDoc[]> = {
     {
       method: "POST",
       path: "/google-sheets-sync",
-      description: "Sync leads from Google Sheets to Kiruvo CRM.",
+      description: "Sync leads from Google Sheets to Thermi CRM.",
       auth: "Bearer token",
       body: { sheet_id: "string", tab: "string?" },
     },
@@ -114,7 +114,7 @@ const APIDocs = () => {
       <div>
         <h1 className="text-3xl font-bold">API Documentation</h1>
         <p className="text-muted-foreground mt-2">
-          Integrate Kiruvo into your applications with our REST API.
+          Integrate Thermi into your applications with our REST API.
         </p>
       </div>
 

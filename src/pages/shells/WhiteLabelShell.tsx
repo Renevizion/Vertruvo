@@ -22,7 +22,7 @@ export default function WhiteLabelShell() {
             <h2 className="text-lg font-semibold">How white-label works here</h2>
             <ul className="text-sm text-muted-foreground space-y-2 list-disc pl-5">
               <li>Every reseller surface is a <strong>shell instance</strong> at <code>/k/:slug</code>.</li>
-              <li>Set their <strong>brand name</strong> and <strong>logo</strong> — "Kiruvo" is replaced everywhere in that shell.</li>
+              <li>Set their <strong>brand name</strong> and <strong>logo</strong> — "Thermi" is replaced everywhere in that shell.</li>
               <li>Pick only the capabilities they need. Reorder tiles. Publish.</li>
               <li>You keep <strong>one</strong> codebase. Animations, fixes, new capabilities flow to every reseller automatically.</li>
             </ul>

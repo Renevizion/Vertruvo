@@ -14,7 +14,7 @@ type Step =
   | { kind: "assistant"; text: string; verified?: boolean }
   | { kind: "tool"; name: string; args?: Record<string, unknown>; result?: unknown; status: "running" | "ok" | "error"; error?: string };
 
-const STORAGE_KEY = "kiruvo.agentShell.thread.v1";
+const STORAGE_KEY = "thermi.agentShell.thread.v1";
 
 /**
  * Agent Shell — standalone conversational front door.
@@ -69,7 +69,7 @@ export default function AgentShell() {
   return (
     <ShellChrome
       shell="agent"
-      title="Kiruvo Agent"
+      title="Thermi Agent"
       subtitle="Conversational front door · invokes any capability"
       accent="bg-gradient-to-br from-sky-500 to-sky-700"
       defaultCapability="agent.chat"
