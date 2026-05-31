@@ -30,7 +30,7 @@ interface WebhookConfig {
   is_verified: boolean;
 }
 
-const KIRUVO_INBOUND_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/webhook-inbound`;
+const THERMI_INBOUND_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/webhook-inbound`;
 
 export function WebhookMarketplace() {
   const { toast } = useToast();
@@ -41,7 +41,7 @@ export function WebhookMarketplace() {
   const [copied, setCopied] = useState(false);
 
   const copyInboundUrl = () => {
-    navigator.clipboard.writeText(KIRUVO_INBOUND_URL);
+    navigator.clipboard.writeText(THERMI_INBOUND_URL);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -145,7 +145,7 @@ export function WebhookMarketplace() {
           <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">Thermi Inbound Webhook URL</p>
           <p className="text-xs text-muted-foreground">Give this URL to external services (Zapier, Make, etc.) to send data into Thermi.</p>
           <div className="flex items-center gap-2">
-            <code className="flex-1 text-xs bg-background border rounded px-3 py-2 font-mono truncate">{KIRUVO_INBOUND_URL}</code>
+            <code className="flex-1 text-xs bg-background border rounded px-3 py-2 font-mono truncate">{THERMI_INBOUND_URL}</code>
             <Button size="sm" variant="outline" className="shrink-0 gap-1.5" onClick={copyInboundUrl}>
               {copied ? <CheckCheck className="h-3.5 w-3.5 text-green-500" /> : <Copy className="h-3.5 w-3.5" />}
               {copied ? 'Copied' : 'Copy'}

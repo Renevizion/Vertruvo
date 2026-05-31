@@ -73,7 +73,7 @@ export const AgentCreatorAssistant = ({ open, onOpenChange, workspaceId }: Agent
     queryFn: async () => {
       // Return available integration types
       return [
-        { id: 'thermi_ai', name: 'Thermi AI (recommended)', description: 'Default reasoning + chat — metered through your plan, no setup required' },
+        { id: 'kiruvo_ai', name: 'Thermi AI (recommended)', description: 'Default reasoning + chat — metered through your plan, no setup required' },
         { id: 'openai', name: 'OpenAI (via Thermi AI)', description: 'GPT models routed through the Thermi AI gateway' },
         { id: 'mistral', name: 'Mistral (via Thermi AI)', description: 'Open-source language models routed through the Thermi AI gateway' },
         { id: 'twilio', name: 'Twilio', description: 'Voice and SMS communication' },

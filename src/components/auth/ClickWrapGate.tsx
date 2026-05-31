@@ -77,7 +77,7 @@ export function ClickWrapGate({ userId, email, onAccepted }: ClickWrapGateProps)
         {/* License text */}
         <ScrollArea className="flex-1 px-6 py-4 min-h-0">
           <div className="prose prose-sm max-w-none text-foreground space-y-4 text-sm leading-relaxed">
-            <p className="font-semibold text-base">KIRUVO PLATFORM END USER LICENSE AGREEMENT</p>
+            <p className="font-semibold text-base">THERMI PLATFORM END USER LICENSE AGREEMENT</p>
             <p>Last updated: May 27, 2026 · Effective upon acceptance</p>
 
             <p>This End User License Agreement ("Agreement") is a legally binding contract between you ("User," "Partner," or "Operator") and Milord Ventures LLC, doing business as Thermi ("Company," "we," "us," or "our"), governing your access to and use of the Thermi platform, software, AI agents, workflows, templates, data structures, and all associated intellectual property (collectively, the "Platform").</p>

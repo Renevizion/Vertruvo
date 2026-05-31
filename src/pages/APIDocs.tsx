@@ -59,7 +59,7 @@ const endpoints: Record<string, EndpointDoc[]> = {
     },
     {
       method: "POST",
-      path: "/thermi-ai-agent",
+      path: "/kiruvo-ai-agent",
       description: "Execute a Thermi AI-powered agent query with CRM context.",
       auth: "Bearer token",
       body: { message: "string", context: "object?" },

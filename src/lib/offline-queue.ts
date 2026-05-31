@@ -11,7 +11,7 @@ class OfflineQueueDatabase extends Dexie {
   queue!: Table<OfflineQueueItem, number>;
 
   constructor() {
-    super("thermi-offline-queue");
+    super("kiruvo-offline-queue");
     this.version(1).stores({
       queue: "++id,type,createdAt",
     });

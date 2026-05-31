@@ -123,7 +123,7 @@ const Landing = () => {
     "Never miss a lead — AI responds instantly and automatic text-backs catch every gap",
     "AI answers your phone and books appointments 24/7 (Enterprise plan)",
     "Replaces your CRM, email tool, and booking system in one platform",
-    "Built specifically for HVAC contractors and HVAC service teams",
+    "Built specifically for HVAC contractors and service teams",
   ];
 
   const stats = [
@@ -142,14 +142,14 @@ const Landing = () => {
     },
     {
       name: "Sarah K.",
-      role: "Operations Manager, Keystone Heating & Cooling",
+      role: "Operations Manager, Northwind Heating & Cooling",
       quote:
         "The pipeline automation is a game changer. We manage 60+ active service opportunities and every follow-up, every appointment reminder, every estimate update goes out automatically. Our team closes faster with less stress.",
       rating: 5,
     },
     {
       name: "James L.",
-      role: "Founder, Momentum Mechanical Services",
+      role: "Founder, Summit Mechanical Services",
       quote:
         "We switched from GoHighLevel and haven't looked back. Thermi is cleaner, faster, and the AI insights actually help us prioritize which homeowners need attention first. Our maintenance retention rate jumped 20%.",
       rating: 5,
@@ -350,8 +350,8 @@ const Landing = () => {
                 Built for the businesses that can't afford to miss a call
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                HVAC techs under a house. Charter captains on the water. Landscapers on the mower. Thermi answers the
-                phone when you can't.
+                HVAC techs in crawlspaces. Install crews on rooftops. Service teams between emergency calls. Thermi
+                answers the phone when you can't.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
