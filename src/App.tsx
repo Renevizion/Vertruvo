@@ -15,7 +15,7 @@ import { SubscriptionBanner } from "@/components/subscription/SubscriptionBanner
 import { UsageLimitWatcher } from "@/components/subscription/UsageLimitWatcher";
 import { AIChatDrawer } from "@/components/layout/AIChatDrawer";
 import { useShellHeartbeat } from "@/lib/shell-health";
-import { isPathAllowedForCurrentProfile, isVoiceFocusedProduct } from "@/config/productProfile";
+import { isPathAllowedForCurrentProfile, isVoiceFocusedProduct, VOICE_FOCUSED_FALLBACK_PATH } from "@/config/productProfile";
 
 import Dashboard from "./pages/Dashboard";
 import Auth from "./pages/Auth";
@@ -245,7 +245,7 @@ const AppLayout = () => {
   useShellHeartbeat("saas", null);
 
   if (!isPathAllowedForCurrentProfile(location.pathname)) {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to={VOICE_FOCUSED_FALLBACK_PATH} replace />;
   }
 
   return (
@@ -330,27 +330,27 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PublicLanding />} />
+          <Route path="/" element={<Suspense fallback={<PageLoader />}><PublicLanding /></Suspense>} />
           <Route path="/pricing" element={<Suspense fallback={<PageLoader />}><PublicPricing /></Suspense>} />
           {/* Showcase removed from protected routes */}
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/unsubscribe" element={<Suspense fallback={<PageLoader />}><Unsubscribe /></Suspense>} />
-          <Route path="/api-docs" element={<Suspense fallback={<PageLoader />}><APIDocs /></Suspense>} />
+          {!isVoiceFocusedProduct && <Route path="/api-docs" element={<Suspense fallback={<PageLoader />}><APIDocs /></Suspense>} />}
           <Route path="/book/:slug" element={<Suspense fallback={<PageLoader />}><PublicBooking /></Suspense>} />
-          <Route path="/shell/widget" element={<Suspense fallback={<PageLoader />}><WidgetShell /></Suspense>} />
-          <Route path="/shell/kiosk" element={<Suspense fallback={<PageLoader />}><KioskShell /></Suspense>} />
-          <Route path="/shell/agent" element={<Suspense fallback={<PageLoader />}><AgentShell /></Suspense>} />
-          <Route path="/shell/extension" element={<Suspense fallback={<PageLoader />}><ExtensionShell /></Suspense>} />
-          <Route path="/shell/wl" element={<Suspense fallback={<PageLoader />}><WhiteLabelShell /></Suspense>} />
-          <Route path="/shell/api" element={<Suspense fallback={<PageLoader />}><ApiShell /></Suspense>} />
-          <Route path="/k/:slug" element={<Suspense fallback={<PageLoader />}><PublicShellInstance /></Suspense>} />
-          <Route path="/k/:slug/preview" element={<Suspense fallback={<PageLoader />}><PublicShellInstance /></Suspense>} />
+          {!isVoiceFocusedProduct && <Route path="/shell/widget" element={<Suspense fallback={<PageLoader />}><WidgetShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/shell/kiosk" element={<Suspense fallback={<PageLoader />}><KioskShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/shell/agent" element={<Suspense fallback={<PageLoader />}><AgentShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/shell/extension" element={<Suspense fallback={<PageLoader />}><ExtensionShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/shell/wl" element={<Suspense fallback={<PageLoader />}><WhiteLabelShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/shell/api" element={<Suspense fallback={<PageLoader />}><ApiShell /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/k/:slug" element={<Suspense fallback={<PageLoader />}><PublicShellInstance /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/k/:slug/preview" element={<Suspense fallback={<PageLoader />}><PublicShellInstance /></Suspense>} />}
           <Route path="/auth" element={<Auth />} />
-          <Route path="/portal/login/:slug" element={<Suspense fallback={<PageLoader />}><PortalLogin /></Suspense>} />
-          <Route path="/portal/:slug" element={<ProtectedRoute skipOnboarding><Suspense fallback={<PageLoader />}><Portal /></Suspense></ProtectedRoute>} />
-          <Route path="/portal" element={<ProtectedRoute skipOnboarding><Suspense fallback={<PageLoader />}><Portal /></Suspense></ProtectedRoute>} />
+          {!isVoiceFocusedProduct && <Route path="/portal/login/:slug" element={<Suspense fallback={<PageLoader />}><PortalLogin /></Suspense>} />}
+          {!isVoiceFocusedProduct && <Route path="/portal/:slug" element={<ProtectedRoute skipOnboarding><Suspense fallback={<PageLoader />}><Portal /></Suspense></ProtectedRoute>} />}
+          {!isVoiceFocusedProduct && <Route path="/portal" element={<ProtectedRoute skipOnboarding><Suspense fallback={<PageLoader />}><Portal /></Suspense></ProtectedRoute>} />}
           <Route
             path="/*"
             element={

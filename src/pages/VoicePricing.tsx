@@ -106,7 +106,9 @@ const VoicePricing = () => {
                 min={100}
                 max={3000}
                 step={50}
-                onValueChange={(value) => setMinutes(value[0] || 100)}
+                onValueChange={(value) => {
+                  if (value[0] !== undefined) setMinutes(value[0]);
+                }}
                 className="mb-6"
               />
               <div className="grid sm:grid-cols-3 gap-3">

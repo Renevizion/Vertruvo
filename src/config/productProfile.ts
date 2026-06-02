@@ -1,6 +1,16 @@
 export type ProductProfileKey = "platform" | "voice";
 
 const rawProfile = (import.meta.env.VITE_PRODUCT_PROFILE || "platform").toLowerCase();
+const validProfiles: ProductProfileKey[] = ["platform", "voice"];
+const normalizedProfile: ProductProfileKey = validProfiles.includes(rawProfile as ProductProfileKey)
+  ? (rawProfile as ProductProfileKey)
+  : "platform";
+
+if (rawProfile && !validProfiles.includes(rawProfile as ProductProfileKey)) {
+  console.warn(
+    `[productProfile] Unsupported VITE_PRODUCT_PROFILE "${rawProfile}". Falling back to "platform".`
+  );
+}
 
 export const productProfile: {
   key: ProductProfileKey;
@@ -8,7 +18,7 @@ export const productProfile: {
   appInitial: string;
   platformBrandName: string;
   voiceOveragePerMinute: number;
-} = rawProfile === "voice"
+} = normalizedProfile === "voice"
   ? {
       key: "voice",
       brandName: "Callova",
@@ -25,7 +35,6 @@ export const productProfile: {
     };
 
 export const VOICE_FOCUSED_ALLOWED_PATHS = [
-  "/home",
   "/dashboard",
   "/inbox",
   "/ai-agents",
@@ -34,6 +43,8 @@ export const VOICE_FOCUSED_ALLOWED_PATHS = [
   "/settings",
   "/auth",
 ];
+
+export const VOICE_FOCUSED_FALLBACK_PATH = "/dashboard";
 
 export const isVoiceFocusedProduct = productProfile.key === "voice";
 
