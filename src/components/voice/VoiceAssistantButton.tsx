@@ -314,7 +314,7 @@ export function VoiceAssistantButton({ externalOpen, onExternalClose }: { extern
               isConnected ? "bg-primary animate-pulse" : "bg-muted-foreground"
             )}
           />
-          <span className="font-semibold text-sm">Kiruvo Voice</span>
+          <span className="font-semibold text-sm">Thermi Voice</span>
           <CallStateBadge status={String(callState.value)} />
           {isConnected && (
             <span className="text-[10px] bg-primary/15 text-primary px-1.5 py-0.5 rounded-full font-medium">

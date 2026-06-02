@@ -257,7 +257,7 @@ export function FlyerCanvas({ onBack }: { onBack: () => void }) {
         const { default: html2canvas } = await import("html2canvas");
         const canvas = await html2canvas(el, { scale: 3, useCORS: true, backgroundColor: null });
         const link = document.createElement("a");
-        link.download = "kiruvo-flyer.png";
+        link.download = "thermi-flyer.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
         toast.success("Image downloaded");

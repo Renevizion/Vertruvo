@@ -53,7 +53,7 @@ export function SandboxQuotaBanner({ hideWhenInactive = true, compact = false }:
         <div className="flex items-center gap-2 flex-1 min-w-0">
           <Sparkles className="h-4 w-4 text-primary shrink-0" />
           <div className="min-w-0">
-            <p className="font-medium text-sm truncate">Free trial — Kiruvo's number</p>
+            <p className="font-medium text-sm truncate">Free trial — Thermi's number</p>
             {!compact && (
               <p className="text-xs text-muted-foreground">
                 Test voice & SMS instantly. Connect your own Twilio in Settings to remove limits.

@@ -73,9 +73,9 @@ export const AgentCreatorAssistant = ({ open, onOpenChange, workspaceId }: Agent
     queryFn: async () => {
       // Return available integration types
       return [
-        { id: 'kiruvo_ai', name: 'Kiruvo AI (recommended)', description: 'Default reasoning + chat — metered through your plan, no setup required' },
-        { id: 'openai', name: 'OpenAI (via Kiruvo AI)', description: 'GPT models routed through the Kiruvo AI gateway' },
-        { id: 'mistral', name: 'Mistral (via Kiruvo AI)', description: 'Open-source language models routed through the Kiruvo AI gateway' },
+        { id: 'kiruvo_ai', name: 'Thermi AI (recommended)', description: 'Default reasoning + chat — metered through your plan, no setup required' },
+        { id: 'openai', name: 'OpenAI (via Thermi AI)', description: 'GPT models routed through the Thermi AI gateway' },
+        { id: 'mistral', name: 'Mistral (via Thermi AI)', description: 'Open-source language models routed through the Thermi AI gateway' },
         { id: 'twilio', name: 'Twilio', description: 'Voice and SMS communication' },
         { id: 'serp', name: 'Serp API', description: 'Web search capabilities' },
         { id: 'google_maps', name: 'Google Maps', description: 'Location and mapping services' },
@@ -149,7 +149,7 @@ IMPORTANT - PERSONALIZE FOR THIS USER'S BUSINESS:
 - Business Email: ${businessSettings?.business_email || 'not set'}
 - Business Phone: ${businessSettings?.business_phone || 'not set'}
 
-When generating agents, use "${businessName}" in greetings and instructions instead of generic names like "Kiruvo CRM Support". 
+When generating agents, use "${businessName}" in greetings and instructions instead of generic names like "Thermi CRM Support". 
 The agent should represent this specific business, not the platform.`;
 
       const systemPrompt = `You are an AI agent configuration assistant. Your job is to help users create AI agents by understanding their requirements and generating optimal configurations.

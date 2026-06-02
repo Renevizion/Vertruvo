@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 /**
- * HeroProductMock — A high-fidelity, seeded animated UI of the Kiruvo OS.
+ * HeroProductMock — A high-fidelity, seeded animated UI of the Thermi OS.
  * Pure CSS + a few timers. No real data. No interactivity. Brand: emerald (#059669).
  * Designed as a replacement for the stock Mac hero image.
  */
@@ -85,7 +85,7 @@ export function HeroProductMock() {
           </div>
           <div className="ml-1 sm:ml-3 flex-1 flex justify-center min-w-0">
             <div className="max-w-full truncate text-[10px] sm:text-[11px] text-muted-foreground bg-background/60 border border-border rounded-md px-2 sm:px-3 py-0.5 font-mono">
-              app.kiruvo.com / dashboard
+              app.thermi.com / dashboard
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export function HeroProductMock() {
               <div className="w-6 h-6 rounded-md bg-primary flex items-center justify-center">
                 <Sparkles className="w-3.5 h-3.5 text-primary-foreground" />
               </div>
-              <span className="hidden sm:inline text-xs font-bold tracking-tight">Kiruvo</span>
+              <span className="hidden sm:inline text-xs font-bold tracking-tight">Thermi</span>
             </div>
             {[
               { i: LayoutDashboard, l: "Dashboard", a: true },
@@ -225,7 +225,7 @@ export function HeroProductMock() {
                     (h, i) => (
                       <div
                         key={i}
-                        className="flex-1 rounded-sm bg-primary/70 origin-bottom animate-[kiruvoBar_2.2s_ease-out_infinite]"
+                        className="flex-1 rounded-sm bg-primary/70 origin-bottom animate-[thermiBar_2.2s_ease-out_infinite]"
                         style={{
                           height: `${h}%`,
                           animationDelay: `${i * 90}ms`,
@@ -257,7 +257,7 @@ export function HeroProductMock() {
                       {[0, 1, 2].map((i) => (
                         <div
                           key={i}
-                          className="rounded border border-border bg-muted/40 p-1 animate-[kiruvoCardIn_3s_ease-out_infinite]"
+                          className="rounded border border-border bg-muted/40 p-1 animate-[thermiCardIn_3s_ease-out_infinite]"
                           style={{
                             animationDelay: `${ci * 300 + i * 200}ms`,
                           }}
@@ -320,7 +320,7 @@ export function HeroProductMock() {
                   {Array.from({ length: 28 }).map((_, i) => (
                     <div
                       key={i}
-                      className="flex-1 rounded-full bg-primary/80 animate-[kiruvoWave_1.1s_ease-in-out_infinite]"
+                      className="flex-1 rounded-full bg-primary/80 animate-[thermiWave_1.1s_ease-in-out_infinite]"
                       style={{
                         animationDelay: `${i * 35}ms`,
                         height: `${20 + Math.abs(Math.sin(i * 0.7)) * 60}%`,
@@ -344,7 +344,7 @@ export function HeroProductMock() {
       </div>
 
       {/* Floating badges */}
-      <div className="hidden md:block absolute left-2 top-24 rotate-[-4deg] rounded-xl border border-border bg-card shadow-xl px-3 py-2 animate-[kiruvoFloat_5s_ease-in-out_infinite]">
+      <div className="hidden md:block absolute left-2 top-24 rotate-[-4deg] rounded-xl border border-border bg-card shadow-xl px-3 py-2 animate-[thermiFloat_5s_ease-in-out_infinite]">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-primary" />
           <div>
@@ -357,7 +357,7 @@ export function HeroProductMock() {
           </div>
         </div>
       </div>
-      <div className="hidden md:block absolute right-2 top-44 rotate-[3deg] rounded-xl border border-border bg-card shadow-xl px-3 py-2 animate-[kiruvoFloat_6s_ease-in-out_infinite] [animation-delay:1.2s]">
+      <div className="hidden md:block absolute right-2 top-44 rotate-[3deg] rounded-xl border border-border bg-card shadow-xl px-3 py-2 animate-[thermiFloat_6s_ease-in-out_infinite] [animation-delay:1.2s]">
         <div className="flex items-center gap-2">
           <Bot className="w-4 h-4 text-primary" />
           <div>
@@ -372,20 +372,20 @@ export function HeroProductMock() {
       </div>
 
       <style>{`
-        @keyframes kiruvoBar {
+        @keyframes thermiBar {
           0%, 100% { transform: scaleY(0.6); opacity: 0.55; }
           50% { transform: scaleY(1); opacity: 1; }
         }
-        @keyframes kiruvoWave {
+        @keyframes thermiWave {
           0%, 100% { transform: scaleY(0.4); }
           50% { transform: scaleY(1); }
         }
-        @keyframes kiruvoCardIn {
+        @keyframes thermiCardIn {
           0% { transform: translateY(6px); opacity: 0; }
           25%, 90% { transform: translateY(0); opacity: 1; }
           100% { transform: translateY(-6px); opacity: 0; }
         }
-        @keyframes kiruvoFloat {
+        @keyframes thermiFloat {
           0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
           50% { transform: translateY(-8px) rotate(var(--r, 0deg)); }
         }

@@ -1,5 +1,5 @@
 /**
- * Kiruvo Core Contract
+ * Thermi Core Contract
  *
  * The universal grammar every shell speaks:
  *   viewer + workspace + capability + shell + intent + constraints + telemetry

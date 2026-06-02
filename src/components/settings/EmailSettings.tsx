@@ -13,7 +13,7 @@ export const EmailSettings = () => {
             Email Delivery
           </CardTitle>
           <CardDescription>
-            Email is built into Kiruvo — no SMTP configuration required.
+            Email is built into Thermi — no SMTP configuration required.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -22,7 +22,7 @@ export const EmailSettings = () => {
             <div>
               <p className="font-medium text-sm">Delivery active</p>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Transactional and campaign emails send through Kiruvo's managed delivery network. Bounces, retries, and dead-letter handling run automatically.
+                Transactional and campaign emails send through Thermi's managed delivery network. Bounces, retries, and dead-letter handling run automatically.
               </p>
             </div>
           </div>

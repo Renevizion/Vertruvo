@@ -308,7 +308,7 @@ export function CreateAgentDialog({ open, onOpenChange, defaultType, onSuccess }
                   <div>
                     <p className="text-sm font-medium">Answer inbound calls</p>
                     <p className="text-xs text-muted-foreground mt-0.5">
-                      When enabled, this agent will automatically answer calls that come in to your Kiruvo phone number.
+                      When enabled, this agent will automatically answer calls that come in to your Thermi phone number.
                       Only one agent can be the inbound handler at a time.
                     </p>
                   </div>

@@ -64,7 +64,7 @@ const Unsubscribe = () => {
               <MailX className="h-10 w-10 text-destructive mx-auto" />
               <h1 className="text-xl font-semibold text-foreground">Unsubscribe</h1>
               <p className="text-muted-foreground text-sm">
-                Click the button below to stop receiving app emails from Kiruvo.
+                Click the button below to stop receiving app emails from Thermi.
               </p>
               <Button onClick={handleUnsubscribe} disabled={processing} variant="destructive" className="w-full">
                 {processing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}

@@ -59,7 +59,7 @@ export const BusinessInfoStep = ({
       <div>
         <h3 className="text-lg font-semibold mb-2">Tell us about your business</h3>
         <p className="text-sm text-muted-foreground">
-          We'll use this to personalize your Kiruvo experience
+          We'll use this to personalize your Thermi experience
         </p>
       </div>
 
@@ -122,7 +122,7 @@ export const BusinessInfoStep = ({
         <div className="space-y-2">
           <Label>Business Type *</Label>
           <p className="text-xs text-muted-foreground">
-            Pick the closest fit. Kiruvo will tailor your pipeline stages, sidebar, and AI tone to match.
+            Pick the closest fit. Thermi will tailor your pipeline stages, sidebar, and AI tone to match.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
             {VERTICAL_LIST.map((preset) => {

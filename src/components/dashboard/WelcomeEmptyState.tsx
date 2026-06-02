@@ -30,7 +30,7 @@ export function WelcomeEmptyState({
     {
       id: "voice",
       title: "Set up your AI phone line",
-      description: "Connect your number so Kiruvo can answer calls, book jobs, and follow up — automatically.",
+      description: "Connect your number so Thermi can answer calls, book jobs, and follow up — automatically.",
       icon: Phone,
       completed: !!hasTwilio || !!hasAgents,
       action: () => navigate("/settings?tab=phone-numbers"),
@@ -89,7 +89,7 @@ export function WelcomeEmptyState({
             Setup checklist
           </div>
           <h2 className="text-lg font-semibold tracking-tight">
-            {businessName ? `Let's get ${businessName} running` : "Get Kiruvo running in 10 minutes"}
+            {businessName ? `Let's get ${businessName} running` : "Get Thermi running in 10 minutes"}
           </h2>
           <p className="text-sm text-muted-foreground mt-0.5">
             Complete these 4 steps and your AI will be answering calls and booking jobs on its own.

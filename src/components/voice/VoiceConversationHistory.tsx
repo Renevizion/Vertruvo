@@ -75,7 +75,7 @@ export function VoiceConversationHistory() {
         <div>
           <h3 className="text-lg font-semibold">Voice Conversation History</h3>
           <p className="text-sm text-muted-foreground">
-            Searchable transcripts of every Kiruvo voice session
+            Searchable transcripts of every Thermi voice session
           </p>
         </div>
         <Badge variant="outline" className="gap-1">
@@ -100,7 +100,7 @@ export function VoiceConversationHistory() {
         <Card className="p-8 text-center">
           <Mic className="h-10 w-10 mx-auto mb-3 text-muted-foreground opacity-50" />
           <p className="text-muted-foreground text-sm">
-            {searchQuery ? "No conversations match your search" : "No voice conversations yet. Start talking to Kiruvo!"}
+            {searchQuery ? "No conversations match your search" : "No voice conversations yet. Start talking to Thermi!"}
           </p>
         </Card>
       ) : (
@@ -168,7 +168,7 @@ export function VoiceConversationHistory() {
                             }`}
                           >
                             <span className="text-[10px] font-medium text-muted-foreground block mb-0.5">
-                              {t.role === "user" ? "You" : "Kiruvo"}
+                              {t.role === "user" ? "You" : "Thermi"}
                             </span>
                             {t.text}
                           </div>

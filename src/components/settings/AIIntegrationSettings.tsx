@@ -105,7 +105,7 @@ export function AIIntegrationSettings() {
     saveKeysMutation.mutate(configs);
   };
 
-  const hasKiruvoAI = true; // Kiruvo AI is always available
+  const hasThermiAI = true; // Thermi AI is always available
   const hasMistralKey = workspaceConfigs && typeof workspaceConfigs === 'object' && 'mistral' in workspaceConfigs && (workspaceConfigs as any).mistral?.api_key;
   const hasOpenAIKey = workspaceConfigs && typeof workspaceConfigs === 'object' && 'openai' in workspaceConfigs && (workspaceConfigs as any).openai?.api_key;
 
@@ -124,25 +124,25 @@ export function AIIntegrationSettings() {
       <Alert>
         <Info className="h-4 w-4" />
         <AlertDescription>
-          <strong>How AI Billing Works:</strong> All AI models (Kiruvo AI, platform-provided keys, or your own keys) 
-          are metered and charged through your Kiruvo subscription. This ensures transparent billing and usage tracking 
+          <strong>How AI Billing Works:</strong> All AI models (Thermi AI, platform-provided keys, or your own keys) 
+          are metered and charged through your Thermi subscription. This ensures transparent billing and usage tracking 
           regardless of which model your agents use.
         </AlertDescription>
       </Alert>
 
-      <Tabs defaultValue="kiruvo" className="w-full">
+      <Tabs defaultValue="thermi" className="w-full">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="kiruvo">Kiruvo AI</TabsTrigger>
+          <TabsTrigger value="thermi">Thermi AI</TabsTrigger>
           <TabsTrigger value="platform">Platform Keys</TabsTrigger>
           <TabsTrigger value="byok">Your Keys</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="kiruvo" className="space-y-4">
+        <TabsContent value="thermi" className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-green-500" />
-                Kiruvo AI Gateway (Recommended)
+                Thermi AI Gateway (Recommended)
               </CardTitle>
               <CardDescription>
                 Pre-configured access to Google Gemini and OpenAI models - no setup required
@@ -170,7 +170,7 @@ export function AIIntegrationSettings() {
               <Alert>
                 <AlertCircle className="h-4 w-4" />
                 <AlertDescription>
-                  Usage is metered and billed through your Kiruvo subscription. 
+                  Usage is metered and billed through your Thermi subscription. 
                   Check Settings → Billing for usage details.
                 </AlertDescription>
               </Alert>
@@ -230,7 +230,7 @@ export function AIIntegrationSettings() {
               <Alert>
                 <Info className="h-4 w-4" />
                 <AlertDescription>
-                  <strong>Why this is gated:</strong> storing third-party API keys directly in the database is unsafe. BYOK will land once secrets-vault provisioning ships for Enterprise workspaces. For now, all workspaces use the Kiruvo AI Gateway with transparent metered billing — no per-provider keys required.
+                  <strong>Why this is gated:</strong> storing third-party API keys directly in the database is unsafe. BYOK will land once secrets-vault provisioning ships for Enterprise workspaces. For now, all workspaces use the Thermi AI Gateway with transparent metered billing — no per-provider keys required.
                 </AlertDescription>
               </Alert>
 
@@ -260,7 +260,7 @@ export function AIIntegrationSettings() {
             <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-primary" />
-                <span className="font-medium">Kiruvo AI Gateway</span>
+                <span className="font-medium">Thermi AI Gateway</span>
               </div>
               <Badge variant="default" className="bg-green-500">Active</Badge>
             </div>

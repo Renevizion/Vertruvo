@@ -10,7 +10,7 @@ export default function ApiShell() {
   return (
     <ShellChrome
       shell="api"
-      title="Kiruvo API"
+      title="Thermi API"
       subtitle="Programmatic access · workspace API keys"
       accent="bg-gradient-to-br from-slate-700 to-slate-900"
       onPickCapability={(k) => {
@@ -29,7 +29,7 @@ export default function ApiShell() {
         </Card>
         <Card>
           <CardContent className="p-6 text-xs font-mono overflow-x-auto">
-            <pre>{`curl https://api.kiruvo.com/v1/leads \\
+            <pre>{`curl https://api.thermi.com/v1/leads \\
   -H "Authorization: Bearer kvo_live_..." \\
   -H "Content-Type: application/json" \\
   -d '{"name":"Sarah K.","email":"sarah@example.com"}'`}</pre>

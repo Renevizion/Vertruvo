@@ -1,7 +1,7 @@
 /**
  * TwilioConnectPanel
  *
- * Full Twilio Connect interface inside Kiruvo Settings → Voice & Calling.
+ * Full Twilio Connect interface inside Thermi Settings → Voice & Calling.
  * Handles:
  *  - OAuth connect / disconnect flow
  *  - Phone number management (search, buy, release)
@@ -91,7 +91,7 @@ function ConnectBanner({ onConnect }: { onConnect: () => void }) {
         </Button>
       </div>
       <p className="text-xs text-muted-foreground">
-        Your credentials stay on your Twilio account. Kiruvo never stores your password or billing info.
+        Your credentials stay on your Twilio account. Thermi never stores your password or billing info.
       </p>
     </div>
   );
@@ -191,7 +191,7 @@ function NumbersPanel({ workspaceId }: { workspaceId: string }) {
   const handleBuy = async (phoneNumber: string) => {
     setBuying(phoneNumber);
     try {
-      await callTwilioApi("buy_number", { phone_number: phoneNumber, friendly_name: "Kiruvo Business Line" });
+      await callTwilioApi("buy_number", { phone_number: phoneNumber, friendly_name: "Thermi Business Line" });
       toast.success(`${phoneNumber} purchased and ready`);
       setSearchResults([]);
       qc.invalidateQueries({ queryKey: ["twilio-connect-numbers"] });
@@ -622,7 +622,7 @@ export function TwilioConnectPanel() {
     oauthUrl.searchParams.set("scope", "openid profile email");
     oauthUrl.searchParams.set("state", workspace.id);
 
-    // Open as a small popup so the user stays in Kiruvo
+    // Open as a small popup so the user stays in Thermi
     const width = 520;
     const height = 640;
     const left = Math.round(window.screenX + (window.outerWidth - width) / 2);

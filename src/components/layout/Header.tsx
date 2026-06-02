@@ -197,11 +197,11 @@ export const Header = ({ onVoiceOpen }: { onVoiceOpen?: () => void }) => {
           </div>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="ghost" size="icon" onClick={onVoiceOpen} aria-label="Kiruvo Voice">
+              <Button variant="ghost" size="icon" onClick={onVoiceOpen} aria-label="Thermi Voice">
                 <AudioWaveform className="h-5 w-5" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Kiruvo Voice</TooltipContent>
+            <TooltipContent>Thermi Voice</TooltipContent>
           </Tooltip>
           <Tooltip>
             <TooltipTrigger asChild>

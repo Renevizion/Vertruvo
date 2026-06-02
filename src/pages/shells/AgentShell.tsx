@@ -69,7 +69,7 @@ export default function AgentShell() {
   return (
     <ShellChrome
       shell="agent"
-      title="Kiruvo Agent"
+      title="Thermi Agent"
       subtitle="Conversational front door · invokes any capability"
       accent="bg-gradient-to-br from-sky-500 to-sky-700"
       defaultCapability="agent.chat"

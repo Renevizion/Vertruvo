@@ -75,8 +75,8 @@ export function ShellChrome({
           <div className="flex items-center gap-2">
             <Badge variant="outline" className="uppercase text-[10px] tracking-wide">{shell}</Badge>
             <Button asChild size="sm" variant="ghost" className="hidden sm:inline-flex">
-              <Link to="/dashboard" aria-label="Open full Kiruvo workspace">
-                Open Kiruvo <ExternalLink className="ml-1 h-3 w-3" />
+              <Link to="/dashboard" aria-label="Open full Thermi workspace">
+                Open Thermi <ExternalLink className="ml-1 h-3 w-3" />
               </Link>
             </Button>
           </div>
@@ -126,7 +126,7 @@ export function ShellChrome({
       </main>
 
       <footer role="contentinfo" className="border-t py-3 text-center text-[10px] text-muted-foreground">
-        Powered by <Link to="/" className="underline">Kiruvo</Link> · {shell} shell
+        Powered by <Link to="/" className="underline">Thermi</Link> · {shell} shell
       </footer>
     </div>
   );

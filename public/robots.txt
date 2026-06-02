@@ -1,4 +1,4 @@
-# Kiruvo - AI CRM Platform
+# Thermi - AI CRM Platform
 User-agent: *
 Allow: /
 Allow: /pricing
@@ -53,4 +53,4 @@ User-agent: facebookexternalhit
 Allow: /
 
 # Sitemap location
-Sitemap: https://kiruvo.com/sitemap.xml
+Sitemap: https://thermi.com/sitemap.xml

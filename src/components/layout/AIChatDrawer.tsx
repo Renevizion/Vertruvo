@@ -35,7 +35,7 @@ async function streamChat({
   // raw anon/publishable key with 401 "Unauthorized".
   const { data: { session } } = await supabase.auth.getSession();
   if (!session?.access_token) {
-    onError("Please log in to chat with Kiruvo AI.");
+    onError("Please log in to chat with Thermi AI.");
     return;
   }
   const resp = await fetch(CHAT_URL, {
@@ -96,7 +96,7 @@ function HomeTab({ onAskQuestion, onNavigate }: { onAskQuestion: () => void; onN
           <Sparkles className="h-4 w-4 text-primary" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium text-foreground">Ask Kiruvo AI</p>
+          <p className="text-sm font-medium text-foreground">Ask Thermi AI</p>
           <p className="text-xs text-muted-foreground truncate">Get instant answers about your workspace</p>
         </div>
         <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-0.5 transition-transform flex-shrink-0" />
@@ -150,7 +150,7 @@ function MessagesTab() {
 
 function HelpTab({ onAskAI }: { onAskAI: () => void }) {
   const topics = [
-    "Getting started with Kiruvo",
+    "Getting started with Thermi",
     "Managing leads & pipeline",
     "Setting up AI agents",
     "Voice & inbound calls",
@@ -167,7 +167,7 @@ function HelpTab({ onAskAI }: { onAskAI: () => void }) {
           <Bot className="h-3.5 w-3.5 text-primary" />
         </div>
         <div>
-          <p className="text-sm font-medium">Chat with Kiruvo AI</p>
+          <p className="text-sm font-medium">Chat with Thermi AI</p>
           <p className="text-xs text-muted-foreground">Instant answers, no wait</p>
         </div>
       </button>
@@ -246,7 +246,7 @@ function AIChatView({
           <Sparkles className="h-3.5 w-3.5 text-primary" />
         </div>
         <div className="min-w-0">
-          <p className="text-sm font-semibold leading-none">Kiruvo AI</p>
+          <p className="text-sm font-semibold leading-none">Thermi AI</p>
           <p className="text-[10px] text-muted-foreground mt-0.5">Always available</p>
         </div>
       </div>
@@ -254,7 +254,7 @@ function AIChatView({
         <div className="p-3 space-y-3">
           {messages.length === 0 && (
             <div className="bg-muted rounded-2xl rounded-bl-sm px-3.5 py-2.5 max-w-[85%]">
-              <p className="text-sm">Hi — I'm Kiruvo AI. Ask me anything about your workspace, leads, agents, or campaigns.</p>
+              <p className="text-sm">Hi — I'm Thermi AI. Ask me anything about your workspace, leads, agents, or campaigns.</p>
             </div>
           )}
           {messages.map((msg, i) => (
@@ -382,7 +382,7 @@ export function AIChatDrawer() {
           "fixed z-50 bottom-5 right-5 h-12 w-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-200",
           "bg-primary text-primary-foreground hover:scale-105 active:scale-95",
         )}
-        aria-label="Toggle Kiruvo AI"
+        aria-label="Toggle Thermi AI"
       >
         {open ? <X className="h-5 w-5" /> : <Sparkles className="h-5 w-5" />}
       </button>
@@ -408,7 +408,7 @@ export function AIChatDrawer() {
                   <div className="h-6 w-6 rounded-md bg-primary/10 flex items-center justify-center">
                     <Sparkles className="h-3 w-3 text-primary" />
                   </div>
-                  <span className="text-sm font-semibold">Kiruvo</span>
+                  <span className="text-sm font-semibold">Thermi</span>
                 </div>
                 <Button variant="ghost" size="icon" className="h-6 w-6" onClick={() => setOpen(false)}>
                   <X className="h-3.5 w-3.5" />

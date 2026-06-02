@@ -232,7 +232,7 @@ All colors MUST be HSL.
       hsl(var(--background));
   }
 
-  .kiruvo-app-shell {
+  .thermi-app-shell {
     height: 100dvh;
     max-height: 100dvh;
     overflow: hidden;
@@ -241,91 +241,91 @@ All colors MUST be HSL.
       radial-gradient(60% 55% at 100% 0%, hsl(var(--accent) / 0.55) 0%, transparent 62%),
       linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted) / 0.36));
   }
-  .kiruvo-app-main > * {
+  .thermi-app-main > * {
     animation: aaa-reveal .38s cubic-bezier(.2,.7,.2,1) both;
   }
-  .kiruvo-sidebar [data-sidebar="sidebar"] {
+  .thermi-sidebar [data-sidebar="sidebar"] {
     background:
       linear-gradient(180deg, hsl(var(--sidebar-background) / 0.94), hsl(var(--sidebar-background) / 0.86)),
       radial-gradient(110% 60% at 0% 0%, hsl(var(--primary) / 0.12), transparent 55%);
     backdrop-filter: saturate(135%) blur(18px);
     -webkit-backdrop-filter: saturate(135%) blur(18px);
   }
-  .kiruvo-sidebar [data-sidebar="content"],
-  .kiruvo-app-main {
+  .thermi-sidebar [data-sidebar="content"],
+  .thermi-app-main {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--foreground) / 0.16) transparent;
   }
-  .kiruvo-sidebar [data-sidebar="content"]::-webkit-scrollbar,
-  .kiruvo-app-main::-webkit-scrollbar {
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar,
+  .thermi-app-main::-webkit-scrollbar {
     width: 7px;
     height: 7px;
   }
-  .kiruvo-sidebar [data-sidebar="content"]::-webkit-scrollbar-track,
-  .kiruvo-app-main::-webkit-scrollbar-track {
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-track,
+  .thermi-app-main::-webkit-scrollbar-track {
     background: transparent;
   }
-  .kiruvo-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb,
-  .kiruvo-app-main::-webkit-scrollbar-thumb {
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb,
+  .thermi-app-main::-webkit-scrollbar-thumb {
     border: 2px solid transparent;
     border-radius: 999px;
     background-clip: content-box;
     background-color: hsl(var(--foreground) / 0.15);
   }
-  .kiruvo-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb:hover,
-  .kiruvo-app-main::-webkit-scrollbar-thumb:hover {
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-thumb:hover,
+  .thermi-app-main::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--foreground) / 0.24);
   }
-  .kiruvo-sidebar [data-sidebar="content"]::-webkit-scrollbar-button,
-  .kiruvo-app-main::-webkit-scrollbar-button {
+  .thermi-sidebar [data-sidebar="content"]::-webkit-scrollbar-button,
+  .thermi-app-main::-webkit-scrollbar-button {
     width: 0;
     height: 0;
     display: none;
   }
-  .kiruvo-nav-item {
+  .thermi-nav-item {
     border: 1px solid transparent;
     border-radius: calc(var(--radius) - 4px);
     transition: background-color .18s ease, color .18s ease, transform .18s cubic-bezier(.2,.8,.2,1), border-color .18s ease, box-shadow .18s ease;
   }
-  .kiruvo-nav-item:hover {
+  .thermi-nav-item:hover {
     border-color: transparent;
     background: transparent;
     color: hsl(var(--sidebar-foreground));
     transform: translateX(3px) scale(1.025);
     box-shadow: none;
   }
-  .kiruvo-nav-item:hover svg,
-  .kiruvo-nav-item:hover span {
+  .thermi-nav-item:hover svg,
+  .thermi-nav-item:hover span {
     color: hsl(var(--sidebar-foreground));
   }
-  [data-collapsible="icon"] .kiruvo-nav-item:hover {
+  [data-collapsible="icon"] .thermi-nav-item:hover {
     background: hsl(var(--sidebar-accent) / 0.46);
     transform: translateX(2px) scale(1.08);
   }
-  .kiruvo-rail-item {
+  .thermi-rail-item {
     color: hsl(var(--sidebar-foreground) / 0.72);
     border: 1px solid transparent;
   }
-  .kiruvo-rail-item:hover {
+  .thermi-rail-item:hover {
     color: hsl(var(--sidebar-foreground));
     border-color: hsl(var(--sidebar-border) / 0.42);
     background: hsl(var(--sidebar-accent) / 0.24);
     transform: translateX(2px) scale(1.035);
   }
-  .kiruvo-rail-panel {
+  .thermi-rail-panel {
     filter: drop-shadow(0 18px 26px hsl(var(--background) / 0.18));
     max-height: min(72vh, 420px);
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--sidebar-foreground) / 0.18) transparent;
   }
-  .kiruvo-rail-panel::before {
+  .thermi-rail-panel::before {
     content: "";
     position: absolute;
     inset: 0 auto 0 -12px;
     width: 12px;
   }
-  .kiruvo-rail-feather {
+  .thermi-rail-feather {
     border-left: 1px solid hsl(var(--sidebar-border) / 0.42);
     background:
       linear-gradient(90deg,
@@ -335,13 +335,13 @@ All colors MUST be HSL.
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
   }
-  .kiruvo-rail-panel-item:hover,
-  .kiruvo-rail-panel-item:focus-visible {
+  .thermi-rail-panel-item:hover,
+  .thermi-rail-panel-item:focus-visible {
     color: hsl(var(--sidebar-foreground));
     background: linear-gradient(90deg, hsl(var(--sidebar-accent) / 0.28), transparent);
     transform: translateX(2px);
   }
-  .kiruvo-nav-active {
+  .thermi-nav-active {
     box-shadow: 0 12px 26px -18px hsl(var(--sidebar-primary) / 0.9), inset 0 1px 0 hsl(var(--sidebar-primary-foreground) / 0.18);
   }
   .page-hero {
@@ -363,7 +363,7 @@ All colors MUST be HSL.
     height: 1px;
     background: linear-gradient(90deg, transparent, hsl(var(--foreground) / 0.12), transparent);
   }
-  .kiruvo-card {
+  .thermi-card {
     background:
       linear-gradient(180deg, hsl(var(--card) / 0.95), hsl(var(--card) / 0.82)),
       radial-gradient(90% 70% at 0% 0%, hsl(var(--primary) / 0.045), transparent 55%);
@@ -371,11 +371,11 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-elevated);
     transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
   }
-  .kiruvo-card:hover {
+  .thermi-card:hover {
     border-color: hsl(var(--primary) / 0.22);
     box-shadow: var(--shadow-glow);
   }
-  .kiruvo-table {
+  .thermi-table {
     border: 1px solid hsl(var(--border) / 0.62);
     border-radius: var(--radius);
     background: hsl(var(--card) / 0.72);
@@ -442,10 +442,10 @@ All colors MUST be HSL.
 @media (prefers-reduced-motion: reduce) {
   .animate-reveal, .animate-reveal-2, .animate-reveal-3,
   .animate-float-slow, .animate-aurora, .shimmer-text,
-  .kiruvo-app-main > * {
+  .thermi-app-main > * {
     animation: none !important;
   }
-  .kiruvo-nav-item:hover { transform: none; }
+  .thermi-nav-item:hover { transform: none; }
 }
 /* Mobile safety: prevent any rogue child from triggering page-level horizontal scroll. */
 html, body { overflow-x: hidden; max-width: 100vw; }

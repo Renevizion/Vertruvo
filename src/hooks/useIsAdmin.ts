@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 
-// Platform admin - only YOU (the Kiruvo platform owner)
+// Platform admin - only YOU (the Thermi platform owner)
 export const useIsAdmin = () => {
   return useQuery({
     queryKey: ["is-admin"],

@@ -31,19 +31,19 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Kiruvo | AI CRM Support & Sales</title>
-        <meta name="description" content="Get in touch with Kiruvo. Contact our team for AI CRM support, sales inquiries, or partnership opportunities. Located in Connecticut." />
-        <meta name="keywords" content="Kiruvo contact, AI CRM support, Kiruvo sales, customer service" />
-        <link rel="canonical" href="https://kiruvo.com/contact" />
-        <meta property="og:title" content="Contact Kiruvo | AI CRM Support" />
-        <meta property="og:description" content="Reach out to Kiruvo for support, sales, or partnership inquiries." />
-        <meta property="og:url" content="https://kiruvo.com/contact" />
+        <title>Contact Thermi | AI CRM Support & Sales</title>
+        <meta name="description" content="Get in touch with Thermi. Contact our team for AI CRM support, sales inquiries, or partnership opportunities. Located in Connecticut." />
+        <meta name="keywords" content="Thermi contact, AI CRM support, Thermi sales, customer service" />
+        <link rel="canonical" href="https://thermi.com/contact" />
+        <meta property="og:title" content="Contact Thermi | AI CRM Support" />
+        <meta property="og:description" content="Reach out to Thermi for support, sales, or partnership inquiries." />
+        <meta property="og:url" content="https://thermi.com/contact" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <header className="border-b">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-              <h1 className="text-2xl font-bold">Kiruvo</h1>
+              <h1 className="text-2xl font-bold">Thermi</h1>
             </div>
             <Button variant="ghost" onClick={() => navigate("/")}>
               <ArrowLeft className="w-4 h-4 mr-2" /> Back
@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
               <p className="text-muted-foreground text-lg">
-                Have questions about Kiruvo AI CRM? We'd love to hear from you.
+                Have questions about Thermi AI CRM? We'd love to hear from you.
               </p>
             </div>
 
@@ -113,13 +113,13 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Email Us</h4>
                       <p className="text-muted-foreground">
-                        <a href="mailto:hello@kiruvo.com" className="hover:text-primary">
-                          hello@kiruvo.com
+                        <a href="mailto:hello@thermi.com" className="hover:text-primary">
+                          hello@thermi.com
                         </a>
                       </p>
                       <p className="text-muted-foreground">
-                        <a href="mailto:support@kiruvo.com" className="hover:text-primary">
-                          support@kiruvo.com
+                        <a href="mailto:support@thermi.com" className="hover:text-primary">
+                          support@thermi.com
                         </a>
                       </p>
                     </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Location</h4>
                       <p className="text-muted-foreground">
-                        Kiruvo Headquarters<br />
+                        Thermi Headquarters<br />
                         Connecticut 06850<br />
                         United States
                       </p>

@@ -134,15 +134,15 @@ const Pricing = () => {
   return (
     <>
       <Helmet>
-        <title>Kiruvo Pricing - AI CRM Plans Starting at $60/month | 14-Day Free Trial</title>
-        <meta name="description" content="Kiruvo pricing — the AI operating system for service businesses. Voice agents, CRM, booking, payments & campaigns from $60/mo. Save 20% annually." />
-        <link rel="canonical" href="https://kiruvo.com/pricing" />
+        <title>Thermi Pricing - AI CRM Plans Starting at $60/month | 14-Day Free Trial</title>
+        <meta name="description" content="Thermi pricing — the AI operating system for HVAC businesses. Voice agents, CRM, booking, payments & campaigns from $60/mo. Save 20% annually." />
+        <link rel="canonical" href="https://thermi.com/pricing" />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
         <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-              <h1 className="text-2xl font-bold">Kiruvo</h1>
+              <h1 className="text-2xl font-bold">Thermi</h1>
             </div>
             <div className="flex gap-3">
               <Button variant="ghost" onClick={() => navigate("/auth")}>Sign In</Button>
@@ -373,7 +373,7 @@ const Pricing = () => {
           <div className="container mx-auto px-4 py-12">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
-                <h4 className="font-semibold mb-4">Kiruvo</h4>
+                <h4 className="font-semibold mb-4">Thermi</h4>
                 <p className="text-sm text-muted-foreground">AI-powered CRM for modern teams</p>
               </div>
               <div>
@@ -398,7 +398,7 @@ const Pricing = () => {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-              <p>© {new Date().getFullYear()} Kiruvo. Located in Connecticut 06850. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Thermi. Located in Connecticut 06850. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -263,7 +263,7 @@ export function AgentMonitoringView({ agentId, agentName, workspaceId, agent }: 
               <p className="font-medium text-blue-600 dark:text-blue-400">How to use the Test Console</p>
               <p className="text-muted-foreground mt-1">
                 Type a message below and click "Test Agent" to see how your agent responds. 
-                This routes through the Kiruvo AI gateway using your agent's tools and memory to generate a real response.
+                This routes through the Thermi AI gateway using your agent's tools and memory to generate a real response.
                 Each test is logged in the Activity tab.
               </p>
             </div>
@@ -418,7 +418,7 @@ export function AgentMonitoringView({ agentId, agentName, workspaceId, agent }: 
                           <span>{new Date(usage.created_at!).toLocaleString()}</span>
                         </div>
                         <div className="text-foreground">
-                          Integration: <span className="text-primary">{usage.integration_type === 'lovable' ? 'Kiruvo' : usage.integration_type}</span> | 
+                          Integration: <span className="text-primary">{usage.integration_type === 'lovable' ? 'Thermi' : usage.integration_type}</span> | 
                           Tokens: {usage.tokens_used?.toLocaleString() || 0} | 
                           Cost: ${(usage.cost_usd || 0).toFixed(4)}
                         </div>

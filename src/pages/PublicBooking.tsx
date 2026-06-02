@@ -36,7 +36,7 @@ interface BookingSlot {
 function buildICalBlob(title: string, start: Date, end: Date, location: string, description: string): string {
   const fmt = (d: Date) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
   return [
-    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Kiruvo//Booking//EN",
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Thermi//Booking//EN",
     "BEGIN:VEVENT",
     `DTSTART:${fmt(start)}`, `DTEND:${fmt(end)}`,
     `SUMMARY:${title}`, `LOCATION:${location}`, `DESCRIPTION:${description}`,
@@ -277,13 +277,13 @@ export default function PublicBooking() {
   const location = [settings?.city, settings?.state_province].filter(Boolean).join(", ");
 
   // --- SEO data ---
-  const pageTitle = hasBrandedName ? `Book with ${businessName} | Kiruvo` : `Online Booking | Kiruvo`;
+  const pageTitle = hasBrandedName ? `Book with ${businessName} | Thermi` : `Online Booking | Thermi`;
   const pageDescription = hasBrandedName
     ? (settings?.business_category
-        ? `Book appointments online with ${businessName} — ${settings.business_category} in ${location || "your area"}. Powered by Kiruvo.`
-        : `Book appointments online with ${businessName}${location ? ` in ${location}` : ""}. Powered by Kiruvo.`)
-    : `Book an appointment online. Powered by Kiruvo.`;
-  const pageUrl = `https://kiruvo.com/book/${slug}`;
+        ? `Book appointments online with ${businessName} — ${settings.business_category} in ${location || "your area"}. Powered by Thermi.`
+        : `Book appointments online with ${businessName}${location ? ` in ${location}` : ""}. Powered by Thermi.`)
+    : `Book an appointment online. Powered by Thermi.`;
+  const pageUrl = `https://thermi.com/book/${slug}`;
 
   // --- Calendar event data for confirmation ---
   const confirmedStart = useMemo(() => {
@@ -371,7 +371,7 @@ export default function PublicBooking() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         {settings?.logo_url && <meta property="og:image" content={settings.logo_url} />}
-        <meta property="og:site_name" content="Kiruvo" />
+        <meta property="og:site_name" content="Thermi" />
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={pageTitle} />
@@ -614,7 +614,7 @@ export default function PublicBooking() {
       </div>
 
       <div className="text-center py-4 text-xs text-slate-400">
-        Powered by <span className="font-medium">Kiruvo</span>
+        Powered by <span className="font-medium">Thermi</span>
       </div>
     </div>
   );

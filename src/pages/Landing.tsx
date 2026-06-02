@@ -103,13 +103,13 @@ const Landing = () => {
       icon: Phone,
       title: "AI Voice Agent",
       description:
-        "Your phone rings — Kiruvo answers. Qualifies the lead, books the appointment, and sends a confirmation. You find out when you check your calendar.",
+        "Your phone rings — Thermi answers. Qualifies the lead, books the appointment, and sends a confirmation. You find out when you check your calendar.",
     },
     {
       icon: Workflow,
       title: "Automated Follow-Up",
       description:
-        "Every missed call, every new lead, every completed job — Kiruvo sends the right message at the right time without you lifting a finger.",
+        "Every missed call, every new lead, every completed job — Thermi sends the right message at the right time without you lifting a finger.",
     },
     {
       icon: TrendingUp,
@@ -123,7 +123,7 @@ const Landing = () => {
     "Never miss a lead — AI responds instantly and automatic text-backs catch every gap",
     "AI answers your phone and books appointments 24/7 (Enterprise plan)",
     "Replaces your CRM, email tool, and booking system in one platform",
-    "Built for HVAC, landscaping, charters, farms, breweries, and more",
+    "Built specifically for HVAC contractors and service teams",
   ];
 
   const stats = [
@@ -137,21 +137,21 @@ const Landing = () => {
       name: "Marcus T.",
       role: "Owner, Apex HVAC Services",
       quote:
-        "We used to lose half our leads because we couldn't respond fast enough. Kiruvo's AI agent picks up the phone and books the appointment before I even finish my coffee. Revenue is up 35% in 4 months.",
+        "We used to lose half our leads because we couldn't respond fast enough. Thermi's AI agent picks up the phone and books the appointment before I even finish my coffee. Revenue is up 35% in 4 months.",
       rating: 5,
     },
     {
       name: "Sarah K.",
-      role: "Broker, Keystone Real Estate Group",
+      role: "Operations Manager, Northwind Heating & Cooling",
       quote:
-        "The pipeline automation is a game changer. I manage 60+ active listings and every follow-up, every showing reminder, every price update goes out automatically. My team closes faster with less stress.",
+        "The pipeline automation is a game changer. We manage 60+ active service opportunities and every follow-up, every appointment reminder, every estimate update goes out automatically. Our team closes faster with less stress.",
       rating: 5,
     },
     {
       name: "James L.",
-      role: "Founder, Momentum Digital Agency",
+      role: "Founder, Summit Mechanical Services",
       quote:
-        "We switched from GoHighLevel and haven't looked back. Kiruvo is cleaner, faster, and the AI insights actually help us prioritize which clients need attention. Our retention rate jumped 20%.",
+        "We switched from GoHighLevel and haven't looked back. Thermi is cleaner, faster, and the AI insights actually help us prioritize which homeowners need attention first. Our maintenance retention rate jumped 20%.",
       rating: 5,
     },
   ];
@@ -170,27 +170,27 @@ const Landing = () => {
   return (
     <>
       <Helmet>
-        <title>Kiruvo — Where Service Businesses Stop Losing Leads</title>
+        <title>Thermi — Where HVAC Teams Stop Losing Leads</title>
         <meta
           name="description"
-          content="Kiruvo is the AI operating system for service businesses. Calls answered. Appointments booked. Follow-ups sent. Automatically. Built for HVAC, landscaping, charters, and every business that runs on phone calls and repeat customers."
+          content="Thermi is the AI operating system for HVAC businesses. Calls answered. Appointments booked. Follow-ups sent. Automatically. Built for HVAC teams that run on phone calls and repeat service."
         />
         <meta
           name="keywords"
-          content="Kiruvo, AI receptionist, AI voice agent, missed call text back, inbound call AI, service business CRM, HVAC CRM, landscaping CRM, booking automation, lead follow-up automation"
+          content="Thermi, HVAC CRM, HVAC AI receptionist, HVAC AI voice agent, missed call text back, inbound call AI, booking automation, lead follow-up automation"
         />
-        <link rel="canonical" href="https://kiruvo.com/" />
-        <meta property="og:title" content="Kiruvo — Where Service Businesses Stop Losing Leads" />
+        <link rel="canonical" href="https://thermi.com/" />
+        <meta property="og:title" content="Thermi — Where HVAC Teams Stop Losing Leads" />
         <meta
           property="og:description"
           content="Your AI operational coworker. Calls answered. Appointments booked. Follow-ups sent. You just show up."
         />
-        <meta property="og:url" content="https://kiruvo.com/" />
+        <meta property="og:url" content="https://thermi.com/" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:title" content="Kiruvo — Where Service Businesses Stop Losing Leads" />
+        <meta name="twitter:title" content="Thermi — Where HVAC Teams Stop Losing Leads" />
         <meta
           name="twitter:description"
-          content="Kiruvo answers your calls, books your appointments, and follows up with every lead — automatically. Built for service businesses."
+          content="Thermi answers your calls, books your appointments, and follows up with every lead — automatically. Built for HVAC businesses."
         />
       </Helmet>
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
@@ -198,7 +198,7 @@ const Landing = () => {
         <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold">Kiruvo</span>
+              <span className="text-2xl font-bold">Thermi</span>
             </div>
             <nav className="hidden md:flex gap-6 items-center" aria-label="Main navigation">
               <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -234,10 +234,10 @@ const Landing = () => {
             <div className="max-w-4xl mx-auto space-y-6 relative z-10">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
                 <Bot className="w-4 h-4" aria-hidden="true" />
-                <span>Built for the businesses that run on phone calls and repeat customers</span>
+                <span>Built for HVAC teams that run on phone calls and repeat service</span>
               </div>
               <h1 id="hero-heading" className="text-5xl md:text-6xl font-bold tracking-tight">
-                Where service businesses
+                Where HVAC teams
                 <span className="text-primary"> stop losing leads.</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -282,7 +282,7 @@ const Landing = () => {
                 ))}
               </div>
 
-              {/* Hero Product Mock — animated, seeded from the real Kiruvo UI */}
+              {/* Hero Product Mock — animated, seeded from the real Thermi UI */}
               <div className="mt-14 max-w-4xl mx-auto">
                 <HeroProductMock />
               </div>
@@ -350,8 +350,8 @@ const Landing = () => {
                 Built for the businesses that can't afford to miss a call
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                HVAC techs under a house. Charter captains on the water. Landscapers on the mower. Kiruvo answers the
-                phone when you can't.
+                HVAC techs in crawlspaces. Install crews on rooftops. Service teams between emergency calls. Thermi
+                answers the phone when you can't.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -385,7 +385,7 @@ const Landing = () => {
                   Your phone rings. Your AI agent picks up. The job gets booked.
                 </h2>
                 <p className="text-muted-foreground text-base md:text-lg mb-6">
-                  On the Enterprise plan, Kiruvo answers calls in realtime — qualifies the lead, schedules the appointment, and logs everything to your CRM. No staff, no missed calls, no "we'll call you back."
+                  On the Enterprise plan, Thermi answers calls in realtime — qualifies the lead, schedules the appointment, and logs everything to your CRM. No staff, no missed calls, no "we'll call you back."
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -420,7 +420,7 @@ const Landing = () => {
                     The first business to respond wins the job
                   </h2>
                   <p className="text-muted-foreground mb-6">
-                    80% of customers hire whoever responds first. Kiruvo responds in seconds — not hours. Your AI agent
+                    80% of customers hire whoever responds first. Thermi responds in seconds — not hours. Your AI agent
                     answers the call, qualifies the lead, and books the appointment before your competitor even checks
                     their voicemail.
                   </p>
@@ -449,7 +449,7 @@ const Landing = () => {
               <h2 id="testimonials-heading" className="text-3xl font-bold mb-4">
                 Trusted by Service Businesses
               </h2>
-              <p className="text-muted-foreground">Hear from professionals who switched to Kiruvo</p>
+              <p className="text-muted-foreground">Hear from professionals who switched to Thermi</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {testimonials.map((t, i) => (
@@ -497,36 +497,35 @@ const Landing = () => {
           <section className="bg-muted/30 py-12" aria-labelledby="facts-heading">
             <div className="container mx-auto px-4">
               <h2 id="facts-heading" className="text-2xl font-bold text-center mb-10">
-                Kiruvo at a Glance
+                Thermi at a Glance
               </h2>
               <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <Card className="p-5">
-                  <h3 className="font-semibold mb-2">What is Kiruvo?</h3>
+                  <h3 className="font-semibold mb-2">What is Thermi?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kiruvo is an AI-powered CRM platform with built-in AI agents. It automates lead management,
-                    appointment booking, follow-ups, and sales workflows for service businesses, agencies, and
-                    contractors.
+                    Thermi is an AI-powered CRM platform with built-in AI agents. It automates lead management,
+                    appointment booking, follow-ups, and sales workflows for HVAC contractors and multi-location HVAC
+                    teams.
                   </p>
                 </Card>
                 <Card className="p-5">
-                  <h3 className="font-semibold mb-2">Who is Kiruvo for?</h3>
+                  <h3 className="font-semibold mb-2">Who is Thermi for?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kiruvo is designed for small-to-mid-sized service businesses including HVAC contractors, real estate
-                    agents, marketing agencies, fitness studios, and professional services firms that rely on lead
-                    generation and client retention.
+                    Thermi is designed for residential and commercial HVAC businesses that rely on fast lead response,
+                    appointment scheduling, and long-term maintenance client retention.
                   </p>
                 </Card>
                 <Card className="p-5">
-                  <h3 className="font-semibold mb-2">How much does Kiruvo cost?</h3>
+                  <h3 className="font-semibold mb-2">How much does Thermi cost?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kiruvo offers three plans: Starter at $60/month, Professional at $140/month, and Enterprise at
+                    Thermi offers three plans: Starter at $60/month, Professional at $140/month, and Enterprise at
                     $320/month. All plans include a 14-day free trial with no commitment required.
                   </p>
                 </Card>
                 <Card className="p-5">
-                  <h3 className="font-semibold mb-2">What are Kiruvo AI Agents?</h3>
+                  <h3 className="font-semibold mb-2">What are Thermi AI Agents?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kiruvo AI Agents are autonomous assistants that respond to leads in under 60 seconds, qualify
+                    Thermi AI Agents are autonomous assistants that respond to leads in under 60 seconds, qualify
                     prospects, book appointments, and handle follow-ups 24/7 without human intervention.
                   </p>
                 </Card>
@@ -542,9 +541,9 @@ const Landing = () => {
                   </ul>
                 </Card>
                 <Card className="p-5">
-                  <h3 className="font-semibold mb-2">Where is Kiruvo based?</h3>
+                  <h3 className="font-semibold mb-2">Where is Thermi based?</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kiruvo is headquartered in Norwalk, Connecticut (06850), United States. The platform serves
+                    Thermi is headquartered in Norwalk, Connecticut (06850), United States. The platform serves
                     businesses across the U.S. and is accessible worldwide via web browser on any device.
                   </p>
                 </Card>
@@ -563,7 +562,7 @@ const Landing = () => {
                   See what missed calls are costing you
                 </h2>
                 <p className="text-muted-foreground max-w-xl mx-auto">
-                  Plug in your numbers. We'll show you the revenue you're losing today and what Kiruvo's AI voice agent
+                  Plug in your numbers. We'll show you the revenue you're losing today and what Thermi's AI voice agent
                   recovers.
                 </p>
               </div>
@@ -797,9 +796,9 @@ const Landing = () => {
           <div className="container mx-auto px-4 py-12">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
-                <h3 className="font-semibold mb-4">Kiruvo</h3>
+                <h3 className="font-semibold mb-4">Thermi</h3>
                 <p className="text-sm text-muted-foreground">
-                  Kiruvo is the AI operating system for service businesses. Calls answered. Appointments booked.
+                  Thermi is the AI operating system for HVAC businesses. Calls answered. Appointments booked.
                   Follow-ups sent. Built in Connecticut.
                 </p>
               </div>
@@ -855,7 +854,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-xs text-muted-foreground space-y-1">
-              <p>© {new Date().getFullYear()} Kiruvo, a product of Milord Ventures LLC. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Thermi, a product of Milord Ventures LLC. All rights reserved.</p>
               <p>Located in Connecticut 06850 · Built in the USA.</p>
             </div>
           </div>

@@ -93,7 +93,7 @@ export function ElevenLabsConnectPanel() {
               )}
             </div>
             <p className="text-xs text-muted-foreground mt-0.5">
-              Your agents are available to select when creating a Voice AI agent in Kiruvo.
+              Your agents are available to select when creating a Voice AI agent in Thermi.
             </p>
           </div>
           <Button
@@ -109,7 +109,7 @@ export function ElevenLabsConnectPanel() {
         </div>
         <div className="px-6 py-4">
           <p className="text-sm text-muted-foreground">
-            When you create a Voice AI agent, Kiruvo will automatically pull your ElevenLabs agents so you can select one from a dropdown — no copy-pasting needed.
+            When you create a Voice AI agent, Thermi will automatically pull your ElevenLabs agents so you can select one from a dropdown — no copy-pasting needed.
           </p>
         </div>
       </Card>
@@ -126,7 +126,7 @@ export function ElevenLabsConnectPanel() {
         <div className="flex-1 min-w-0">
           <p className="font-semibold">ElevenLabs</p>
           <p className="text-xs text-muted-foreground mt-0.5">
-            Connect your ElevenLabs account to use your Conversational AI agents inside Kiruvo.
+            Connect your ElevenLabs account to use your Conversational AI agents inside Thermi.
           </p>
         </div>
         <Badge variant="outline" className="text-xs shrink-0">Not connected</Badge>
