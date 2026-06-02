@@ -19,6 +19,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { useEnabledModules, type ModuleId } from "@/hooks/useEnabledModules";
 import { useWorkspaceShape } from "@/hooks/useWorkspaceShape";
 import { SAAS_NAV, resolveNavItem, type SaasNavGroup } from "@/capabilities/saas-nav";
+import { isPathAllowedForCurrentProfile, productProfile } from "@/config/productProfile";
 
 export const Sidebar = () => {
   const location = useLocation();
@@ -58,6 +59,7 @@ export const Sidebar = () => {
             if (item.adminOnly && !isAdmin) return false;
             if (isAdmin) return true;
             if (item.module && !enabledModules.includes(item.module)) return false;
+            if (!isPathAllowedForCurrentProfile(item.href)) return false;
             return true;
           }),
       }))
@@ -128,7 +130,7 @@ export const Sidebar = () => {
               isCollapsed ? "text-2xl text-center" : "text-3xl"
             )}
           >
-            {isCollapsed ? "K" : "Thermi"}
+            {isCollapsed ? productProfile.appInitial : productProfile.brandName}
           </h1>
         </div>
 

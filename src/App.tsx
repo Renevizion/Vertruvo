@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useErrorReporting } from "@/hooks/useErrorReporting";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Sidebar } from "@/components/layout/Sidebar";
@@ -15,10 +15,12 @@ import { SubscriptionBanner } from "@/components/subscription/SubscriptionBanner
 import { UsageLimitWatcher } from "@/components/subscription/UsageLimitWatcher";
 import { AIChatDrawer } from "@/components/layout/AIChatDrawer";
 import { useShellHeartbeat } from "@/lib/shell-health";
+import { isPathAllowedForCurrentProfile, isVoiceFocusedProduct } from "@/config/productProfile";
 
 import Dashboard from "./pages/Dashboard";
 import Auth from "./pages/Auth";
 import Landing from "./pages/Landing";
+import VoiceLanding from "./pages/VoiceLanding";
 import NotFound from "./pages/NotFound";
 import { useQuery } from "@tanstack/react-query";
 
@@ -49,6 +51,7 @@ const APIDocs = lazy(() => import("./pages/APIDocs"));
 const Terms = lazy(() => import("./pages/Terms"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Pricing = lazy(() => import("./pages/Pricing"));
+const VoicePricing = lazy(() => import("./pages/VoicePricing"));
 // Showcase removed from nav — kept as public route only
 const Activity = lazy(() => import("./pages/Activity"));
 // AIChat page removed — now a drawer in header
@@ -238,7 +241,13 @@ const ProtectedRoute = ({ children, skipOnboarding = false }: { children: React.
 
 const AppLayout = () => {
   const [voiceOpen, setVoiceOpen] = useState(false);
+  const location = useLocation();
   useShellHeartbeat("saas", null);
+
+  if (!isPathAllowedForCurrentProfile(location.pathname)) {
+    return <Navigate to="/dashboard" replace />;
+  }
+
   return (
     <div className="thermi-app-shell h-screen max-h-screen bg-background flex w-full overflow-hidden" style={{height:'100dvh',maxHeight:'100dvh'}}>
       <Sidebar />
@@ -311,6 +320,8 @@ const AppLayout = () => {
 
 const App = () => {
   useErrorReporting();
+  const PublicLanding = isVoiceFocusedProduct ? VoiceLanding : Landing;
+  const PublicPricing = isVoiceFocusedProduct ? VoicePricing : Pricing;
   
   return (
     <QueryClientProvider client={queryClient}>
@@ -319,8 +330,8 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/" element={<PublicLanding />} />
+          <Route path="/pricing" element={<Suspense fallback={<PageLoader />}><PublicPricing /></Suspense>} />
           {/* Showcase removed from protected routes */}
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />

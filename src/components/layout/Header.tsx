@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
+import { productProfile } from "@/config/productProfile";
 
 export const Header = ({ onVoiceOpen }: { onVoiceOpen?: () => void }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -197,11 +198,11 @@ export const Header = ({ onVoiceOpen }: { onVoiceOpen?: () => void }) => {
           </div>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="ghost" size="icon" onClick={onVoiceOpen} aria-label="Thermi Voice">
+              <Button variant="ghost" size="icon" onClick={onVoiceOpen} aria-label={`${productProfile.brandName} Voice`}>
                 <AudioWaveform className="h-5 w-5" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Thermi Voice</TooltipContent>
+            <TooltipContent>{productProfile.brandName} Voice</TooltipContent>
           </Tooltip>
           <Tooltip>
             <TooltipTrigger asChild>
